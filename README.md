@@ -5,6 +5,10 @@ Update system and services
 ```sh
 sudo apt dist-upgrade & sudo apt update & sudo apt upgrade
 ```
+Removal of unnecessary libraries
+```sh
+sudo apt-get autoremove & sudo apt-get autoremove --purge
+```
 ## Services
 
 

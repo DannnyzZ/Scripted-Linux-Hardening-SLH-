@@ -1,4 +1,4 @@
-# Linux-OS-hardening-scripts
+# Scripted Linux Hardening (SLH) v.1.0
 
 ## System Maintenance
 Update system and services

@@ -12,9 +12,20 @@ sudo apt-get autoremove & sudo apt-get autoremove --purge
 ## Services
 
 
+
 ## User privileges
-
-
+Password policies:
+```sh
+#!/bin/bash
+# Set the maximum password age to 30 days
+sudo echo "password [success=1 default=ignore]       pam_unix.so maxage=30" >> /etc/pam.d/sshd
+# Add password complexity requirements
+sudo echo "password [success=1 default=ignore]       pam_unix.so minlen=12 minclasstype=4 minlenclasses=4" >> /etc/pam.d/sshd
+# Reload the PAM configuration
+sudo pam-auth-update
+# Restart the service
+sudo systemctl restart sshd
+```
 ## Kernel
 
 

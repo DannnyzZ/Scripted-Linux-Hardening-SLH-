@@ -2,8 +2,9 @@
 
 ## System Maintenance
 Update system and services
+```sh
 sudo apt dist-upgrade & sudo apt update & sudo apt upgrade
-
+```
 ## Services
 
 

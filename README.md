@@ -1,22 +1,21 @@
 # Scripted Linux Hardening (SLH) v.1.0
 
 # System Maintenance
-## System updates
-## Update system and services
-## Update distribution
-## Set automatic updates every one week
+1. Update distribution
+2. Update system and services
+3. Remove unnecessary libraries
+4. Set automatic updates every one week
 
+```sh
 # Update distribution (might cause problem with used apt process)
 sudo apt dist-upgrade
 # Update system and services
 sudo apt update & sudo apt upgrade
+# Removal of unnecessary libraries
+sudo apt-get autoremove & sudo apt-get autoremove --purge
+```
 
 # 2. Libraries
-## - Remove unnecessary libraries
-
-## Removal of unnecessary libraries
-sudo apt-get autoremove & sudo apt-get autoremove --purge
-
 
 # Accounts
 1. Password policies

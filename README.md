@@ -10,7 +10,25 @@
 
 About SLH - WRITE HERE
 
+
 ---
+
+
+## 📒 Table of Contents
+- [📒 Table of Contents](#-table-of-contents)
+- [📍 Overview](#-overview)
+- [🚀 Getting Started](#-getting-started)
+  - [✔️ Prerequisites](#️-prerequisites)
+  - [⚠️ Warning](#-Warning)
+- [🗺 Roadmap](#-roadmap)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [👏 Acknowledgments](#-acknowledgments)
+- [🗃️ Changelog](#-changelog)
+
+
+---
+
 
 # 🛠️ SYSTEM MAINTENANCE
 1. Update distribution
@@ -128,7 +146,9 @@ sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
 sudo iptables -A OUTPUT -j DROP
 ```
 
+
 ---
+
 
 ### ✔️ Prerequisites
 
@@ -141,7 +161,9 @@ Before you begin, ensure that you have the following prerequisites installed:
 1. Run terminal on choosen machine.
 2. Execute commands.
 
+
 ---
+
 
 ### ⚠️ Warning
 
@@ -151,7 +173,9 @@ WRITE HERE
 
 **Use SLH wisely to enhance security while minimizing risks.**
 
+
 ---
+
 
 ## 🗺 Roadmap
 
@@ -159,7 +183,9 @@ WRITE HERE
 
 > - [ ] ` Incoming feature 1: `
 
+
 ---
+
 
 ## 🤝 Contributing
 
@@ -182,13 +208,17 @@ git push origin NEW_FIX
 7. Create a new pull request to the original project repository. In the pull request, describe the changes you've made and why they're necessary.
 The project maintainers will review your changes and provide feedback or merge them into the main branch.
 
+
 ---
+
 
 ## 📄 License
 
 Non-Commercial Use ONLY.
 
+
 ---
+
 
 ## 👏 Acknowledgments
 
@@ -205,11 +235,15 @@ Non-Commercial Use ONLY.
   `ℹ️  Readme-ai https://github.com/eli64s/readme-ai`
 
   `ℹ️  Logo.com https://logo.com`
+
   
 ---
+
 
 ## 🗃️ Changelog
 
 WRITE HERE
 
+
 ---
+

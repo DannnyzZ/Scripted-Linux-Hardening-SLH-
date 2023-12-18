@@ -1,56 +1,11 @@
 # Scripted Linux Hardening (SLH) v.1.0
 
-   ![Linux](https://img.shields.io/badge/Linux-blue?style=flat&logo=Linux&logoColor=White)
-   
-   ![Bash](https://img.shields.io/badge/Bash-Green?style=plastic&logo=Bash&logoColor=Red)
-
-   ![Batch](https://img.shields.io/badge/Batch-333333?style=flat&logo=windows&logoColor=green)
-
-   ![NIST](https://img.shields.io/badge/NIST-333333?style=for-the-badge&logo=nist&logoColor=blue)
-
-   ![CIS](https://img.shields.io/badge/CIS-333333?style=for-the-badge&logo=cis&logoColor=violet)
-
-
-I apologize for the oversight. Here are the badges with distinct colors in the NIST style:
-
-1. **Linux:**
-   ![Linux](https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=White)
-
-3. **Bash:**
-   ![Bash](https://img.shields.io/badge/Bash-green?style=for-the-badge&logo=Bash&logoColor=Red)
-
-4. **Batch:**
-   ![Batch](https://img.shields.io/badge/Batch-gold?style=for-the-badge&logo=windows&logoColor=Green)
-
-5. **NIST:**
-   ![NIST](https://img.shields.io/badge/NIST-blue?style=for-the-badge&logo=nist&logoColor=White)
-
-6. **CIS:**
-   ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=White)
-
-   I apologize for the confusion. It seems there was a mistake in the badge color codes. Here are the corrected badges:
-
-1. **Linux:**
    ![Linux](https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=white)
-
-2. **Bash:**
    ![Bash](https://img.shields.io/badge/Bash-green?style=for-the-badge&logo=Bash&logoColor=red)
-
-3. **Batch:**
    ![Batch](https://img.shields.io/badge/Batch-gold?style=for-the-badge&logo=windows&logoColor=green)
-
-4. **NIST:**
    ![NIST](https://img.shields.io/badge/NIST-blue?style=for-the-badge&logo=nist&logoColor=white)
-
-5. **CIS:**
    ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=white)
 
-Please use these corrected URLs for the badges in your documentation or README files.
-
-Please copy and paste the URL for the badges directly into your documentation or README files.
-
-
-These use the "for-the-badge" style, which is a bit larger and more prominent. Adjust as needed for your preferences.
 
 3. **OS-Hardening:**
    ![OS-Hardening](https://img.shields.io/badge/OS--Hardening-333333?style=flat&logo=shield)

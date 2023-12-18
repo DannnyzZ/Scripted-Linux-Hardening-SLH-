@@ -6,9 +6,9 @@
 
    ![Batch](https://img.shields.io/badge/Batch-333333?style=flat&logo=windows&logoColor=green)
 
-   ![NIST](https://img.shields.io/badge/NIST-333333?style=for-the-badge&logo=nist&logoColor=white)
+   ![NIST](https://img.shields.io/badge/NIST-333333?style=for-the-badge&logo=nist&logoColor=blue)
 
-   ![CIS](https://img.shields.io/badge/CIS-333333?style=for-the-badge&logo=cis&logoColor=white)
+   ![CIS](https://img.shields.io/badge/CIS-333333?style=for-the-badge&logo=cis&logoColor=violet)
 
 These use the "for-the-badge" style, which is a bit larger and more prominent. Adjust as needed for your preferences.
 

@@ -19,11 +19,11 @@ sudo apt-get autoremove & sudo apt-get autoremove --purge
 
 # Accounts
 1. Password policies
-  - Password age
-  - Password complexity requirements
-  - Implement multi-factor authentication where possible.
+- Password age
+- Password complexity requirements
+- Implement multi-factor authentication where possible.
 
-
+### Main syntax
 ```sh
 # Set the maximum password age to 30 days
 sudo echo "password [success=1 default=ignore]       pam_unix.so maxage=30" >> /etc/pam.d/sshd
@@ -82,6 +82,7 @@ telnet
 
 
 # - Use secure network protocols and disable insecure ones.
+```sh
 # - ICMP (Internet Control Message Protocol) - Drop all incoming packets from all IP's.
 sudo iptables -A INPUT -p icmp -j DROP
 # Allow specific ports: SSH, DNS, HTTP, HTTPS
@@ -101,3 +102,4 @@ sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
 
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP
+```

@@ -1,6 +1,6 @@
 # Scripted Linux Hardening (SLH) v.1.0
 
-# System Maintenance
+# SYSTEM MAINTENANCE
 1. Update distribution
 2. Update system and services
 3. Remove unnecessary libraries
@@ -15,9 +15,7 @@ sudo apt update & sudo apt upgrade
 sudo apt-get autoremove & sudo apt-get autoremove --purge
 ```
 
-# 2. Libraries
-
-# Accounts
+# ACCOUNTS
 1. Password policies
 - Password age
 - Password complexity requirements
@@ -35,23 +33,22 @@ sudo pam-auth-update
 sudo systemctl restart sshd
 ```
 
-# Kernel
+# KERNEL
 
-
-# File System
+# FILE SYSTEM
 1. Implement proper file system permissions.
 2. Utilize file system encryption for sensitive data.
 
 
-# Firewall
+# FIREWALL
 1. Configure and maintain firewall rules using tools like iptables.
 
 
-# Logging and auditing
+# LOGGING AND AUDITING
 1. Implement centralized logging for better analysis.
 
 
-# Network and Services
+# NETWORK AND SERVICES
 
 ### Default syntax
 ```sh

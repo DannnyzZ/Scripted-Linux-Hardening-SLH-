@@ -1,10 +1,10 @@
 # Scripted Linux Hardening (SLH) v.1.0
 
-# ___________________| System Maintenance |_____________________________________________ #
-# 1. System updates
-#       - Update system and services
-#       - Update distribution
-#       - Set automatic updates every one week
+# System Maintenance
+## System updates
+## Update system and services
+## Update distribution
+## Set automatic updates every one week
 
 # Update distribution (might cause problem with used apt process)
 sudo apt dist-upgrade
@@ -12,20 +12,20 @@ sudo apt dist-upgrade
 sudo apt update & sudo apt upgrade
 
 # 2. Libraries
-#       - Remove unnecessary libraries
+## - Remove unnecessary libraries
 
-# Removal of unnecessary libraries
+## Removal of unnecessary libraries
 sudo apt-get autoremove & sudo apt-get autoremove --purge
 
 
-# ___________________| Accounts |________________________________________________________#
-# 1. Password policies
-# - Password age
-# - Password complexity requirements
-# - Implement multi-factor authentication where possible.
+# Accounts
+## 1. Password policies
+## - Password age
+## - Password complexity requirements
+## - Implement multi-factor authentication where possible.
 
 
-#!/bin/bash
+```sh
 # Set the maximum password age to 30 days
 sudo echo "password [success=1 default=ignore]       pam_unix.so maxage=30" >> /etc/pam.d/sshd
 # Add password complexity requirements
@@ -34,27 +34,28 @@ sudo echo "password [success=1 default=ignore]       pam_unix.so minlen=12 mincl
 sudo pam-auth-update
 # Restart the service
 sudo systemctl restart sshd
+```
 
 # 2.
 # 3.
 
-# ___________________| Kernel |__________________________________________________________#
+# Kernel
 
 
-# ___________________| File System |_____________________________________________________#
-# - Implement proper file system permissions.
-# - Utilize file system encryption for sensitive data.
+# File System
+## - Implement proper file system permissions.
+## - Utilize file system encryption for sensitive data.
 
 
-# ___________________| Firewall |_________________________________________________________#
-# - Configure and maintain firewall rules using tools like iptables.
+# Firewall
+## - Configure and maintain firewall rules using tools like iptables.
 
 
-# ___________________| Logging and auditing |_____________________________________________#
-# - Implement centralized logging for better analysis.
+# Logging and auditing
+## - Implement centralized logging for better analysis.
 
 
-# ___________________| Network and Services |_________________________________________ ____#
+# Network and Services
 # - Disable and/or uninstall unnecessary network services.
 # - Check status of service
 systemctl status <service_name>

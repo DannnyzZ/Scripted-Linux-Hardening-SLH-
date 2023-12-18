@@ -1,6 +1,4 @@
-<p align="center">
 # Scripted Linux Hardening (SLH) v.1.0
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=white" />

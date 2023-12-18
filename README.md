@@ -70,6 +70,7 @@ systemctl list-unit-files | grep <package_name>
 sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <package_name>
 ```
 ### Services to stop:
+
 <details closed><summary>Services</summary>
 
 | Service       | Details                                                        |

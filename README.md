@@ -93,8 +93,6 @@ sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <
 
 </details>
 
-<details closed><summary>Services</summary>
-
 1. 
 - telnet, rlogin, rsh, vsftpd, finger, authd, netdump, netdump-server, nfs, rwhod, sendmail, smb (Samba), yppasswdd, ypserv, ypxfrd
 

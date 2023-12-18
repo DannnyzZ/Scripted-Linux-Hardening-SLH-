@@ -8,8 +8,6 @@
   <img src="https://img.shields.io/badge/OSHardening-black?style=for-the-badge" />
 </p>
 
----
-
 About SLH - WRITE HERE
 
 ---

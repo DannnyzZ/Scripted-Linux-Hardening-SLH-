@@ -69,7 +69,7 @@ systemctl list-unit-files | grep <package_name>
 - Stop, disable, uninstall service, remove its package.
 sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <package_name>
 ```
-# - Services to stop:
+### Services to stop:
 <details closed><summary>Services</summary>
 
 | Service       | Details                                                        |
@@ -91,23 +91,9 @@ sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <
 | Ypxfrd        | Protocol: N/A. Function: Ypxfrd is the YP (NIS) transfer daemon responsible for transferring NIS maps between servers. Security: Secure with proper configuration and access controls; limit access to authorized systems.             |
 
 </details>
-
-
-
-
-
-
 <details closed><summary>Services</summary>
 
-| Service                                                                   | Details                                                                                                                                                                                                            |
-| ---                                                                    | ---                                                                                                                                                                                                                |
-| Windows Defender | Protocol: N/A. Function: Antivirus and antimalware tool. Use: System protection. Security: Reliable; ensure regular updates for best protection. |
-| Windows Firewall | Protocol: N/A. Function: Filters incoming/outgoing network traffic. Use: Network security. Security: Essential for system protection; configure rules appropriately. |
-
-
-</details>
-
-<details closed><summary>Features</summary>
+1. 
 - telnet, rlogin, rsh, vsftpd, finger, authd, netdump, netdump-server, nfs, rwhod, sendmail, smb (Samba), yppasswdd, ypserv, ypxfrd
 
 

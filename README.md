@@ -1,7 +1,7 @@
 # Scripted Linux Hardening (SLH) v.1.0
 
    ![Linux](https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=white)
-   ![Bash](https://img.shields.io/badge/Bash-green?style=for-the-badge&logo=Bash&logoColor=red)
+   ![Bash](https://img.shields.io/badge/Bash-white?style=for-the-badge&logo=Bash&logoColor=red)
    ![Batch](https://img.shields.io/badge/Batch-gold?style=for-the-badge&logo=windows&logoColor=green)
    ![NIST](https://img.shields.io/badge/NIST-blue?style=for-the-badge&logo=nist&logoColor=white)
    ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=white)

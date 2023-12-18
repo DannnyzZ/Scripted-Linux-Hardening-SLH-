@@ -4,7 +4,7 @@
    ![Bash](https://img.shields.io/badge/Bash-gold?style=for-the-badge&logo=Bash&logoColor=red)
    ![NIST](https://img.shields.io/badge/NIST-orange?style=for-the-badge&logo=nist&logoColor=white)
    ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=white)
-   ![CIS](https://img.shields.io/badge/OSHardening-black?style=for-the-badge&logoColor=white&label=🔥)
+   ![CIS](https://img.shields.io/badge/OSHardening-black?style=for-the-badge&logo=🔥)
 
 
 

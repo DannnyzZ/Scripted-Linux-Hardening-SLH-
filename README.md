@@ -4,13 +4,9 @@
    ![Bash](https://img.shields.io/badge/Bash-gold?style=for-the-badge&logo=Bash&logoColor=red)
    ![NIST](https://img.shields.io/badge/NIST-orange?style=for-the-badge&logo=nist&logoColor=white)
    ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=white)
-   ![CIS](https://img.shields.io/badge/OSHardening-black?style=for-the-badge&logo=fire)
+   ![CIS](https://img.shields.io/badge/OSHardening-black?style=for-the-badge&logoColor=white&label=🔥)
 
-3. **OS-Hardening:**
-   ![OS-Hardening](https://img.shields.io/badge/OS--Hardening-333333?style=flat&logo=shield)
 
-4. **Automatic:**
-   ![Automatic](https://img.shields.io/badge/Automatic-333333?style=flat&logo=automation&logoColor=white)
 
 You can copy and paste these directly into your documentation or README files.
 

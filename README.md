@@ -93,8 +93,7 @@ sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <
 
 </details>
 
-1. 
-- telnet, rlogin, rsh, vsftpd, finger, authd, netdump, netdump-server, nfs, rwhod, sendmail, smb (Samba), yppasswdd, ypserv, ypxfrd
+1. telnet, rlogin, rsh, vsftpd, finger, authd, netdump, netdump-server, nfs, rwhod, sendmail, smb (Samba), yppasswdd, ypserv, ypxfrd
 
 
 # - Use secure network protocols and disable insecure ones.

@@ -115,7 +115,41 @@ sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <
 
 </details>
 
-1. telnet, rlogin, rsh, vsftpd, finger, authd, netdump, netdump-server, nfs, rwhod, sendmail, smb (Samba), yppasswdd, ypserv, ypxfrd
+1. telnet, rlogin/rexec, rsh, vsftpd, finger, authd, netdump, netdump-server, nfs, rwhod, sendmail, smb (Samba), yppasswdd, ypserv, ypxfrd
+```sh
+# Telnet
+sudo systemctl stop telnet & sudo apt remove --purge --auto-remove -y telnet
+# rlogin
+sudo systemctl stop rlogin & sudo apt remove --purge --auto-remove -y rlogin
+# rexec
+sudo systemctl stop rexec & sudo apt remove --purge --auto-remove -y rexec
+# rsh
+sudo systemctl stop rsh & sudo apt remove --purge --auto-remove -y rsh
+# vsftpd
+sudo systemctl stop vsftpd & sudo apt remove --purge --auto-remove -y vsftpd
+# finger
+sudo systemctl stop finger & sudo apt remove --purge --auto-remove -y finger
+# authd
+sudo systemctl stop authd & sudo apt remove --purge --auto-remove -y authd
+# netdump
+sudo systemctl stop netdump & sudo apt remove --purge --auto-remove -y netdump
+# netdump-server
+sudo systemctl stop netdump-server & sudo apt remove --purge --auto-remove -y netdump-server
+# nfs
+sudo systemctl stop nfs & sudo apt remove --purge --auto-remove -y nfs
+# rwhod
+sudo systemctl stop rwhod & sudo apt remove --purge --auto-remove -y rwhod
+# sendmail
+sudo systemctl stop sendmail & sudo apt remove --purge --auto-remove -y sendmail
+# smb (Samba)
+sudo systemctl stop smb & sudo apt remove --purge --auto-remove -y smb
+# yppasswdd
+sudo systemctl stop yppasswdd & sudo apt remove --purge --auto-remove -y yppasswdd
+# ypserv
+sudo systemctl stop ypserv & sudo apt remove --purge --auto-remove -y ypserv
+# ypxfrd
+sudo systemctl stop ypxfrd & sudo apt remove --purge --auto-remove -y ypxfrd
+```
 
 ### Main syntax
 1. Use secure network protocols and disable insecure ones.

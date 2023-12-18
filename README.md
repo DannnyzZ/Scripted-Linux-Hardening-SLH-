@@ -1,13 +1,12 @@
 # Scripted Linux Hardening (SLH) v.1.0
 
+<p align="center">
    ![Linux](https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=white)
    ![Bash](https://img.shields.io/badge/Bash-gold?style=for-the-badge&logo=Bash&logoColor=red)
    ![NIST](https://img.shields.io/badge/NIST-orange?style=for-the-badge&logo=nist&logoColor=white)
    ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=white)
    ![CIS](https://img.shields.io/badge/OSHardening-black?style=for-the-badge&logoColor=white&label=🔥)
-
-
-You can copy and paste these directly into your documentation or README files.
+</p>
 
 # 🛠️ SYSTEM MAINTENANCE
 1. Update distribution

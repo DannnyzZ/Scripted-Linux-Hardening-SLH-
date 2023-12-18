@@ -10,9 +10,9 @@
 
 ---
 
-# About SLH
+About SLH - WRITE HERE
 
-WRITE HERE
+---
 
 # 🛠️ SYSTEM MAINTENANCE
 1. Update distribution

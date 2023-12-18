@@ -19,7 +19,7 @@ sudo apt-get autoremove & sudo apt-get autoremove --purge
 
 # Accounts
 1. Password policies
-- Password age
+> Password age
 - Password complexity requirements
 - Implement multi-factor authentication where possible.
 

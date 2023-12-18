@@ -1,5 +1,4 @@
 # Scripted Linux Hardening (SLH) v.1.0
-# Scripted Linux Hardening (SLH) v.1.0
 
 # ___________________| System Maintenance |_____________________________________________ #
 # 1. System updates
@@ -56,11 +55,52 @@ sudo systemctl restart sshd
 
 
 # ___________________| Network and Services |_________________________________________ ____#
-# - Disable unnecessary network services and ports.
-# - Use secure network protocols and disable insecure ones.
-## Configure and monitor system logs for security events.
-Implement centralized logging for better analysis.
+# - Disable and/or uninstall unnecessary network services.
+# - Check status of service
+systemctl status <service_name>
+systemctl show --property=ActiveState --property=SubState <service_name>
+# - Get info about package
+systemctl list-unit-files | grep <package_name>
+# - Stop, disable, uninstall service, remove its package.
+sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <package_name>
+# - Services to stop:
 
-## Authentication:
-Enforce strong password policies.
-Implement multi-factor authentication where possible.
+telnet
+rlogin
+rsh
+vsftpd
+finger
+authd
+netdump
+netdump-server
+nfs
+rwhod
+sendmail
+smb (Samba)
+yppasswdd
+ypserv
+ypxfrd
+telnet
+
+
+
+# - Use secure network protocols and disable insecure ones.
+# - ICMP (Internet Control Message Protocol) - Drop all incoming packets from all IP's.
+sudo iptables -A INPUT -p icmp -j DROP
+# Allow specific ports: SSH, DNS, HTTP, HTTPS
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+sudo iptables -A INPUT -p udp --dport 53 -j ACCEPT
+
+# Drop all other incoming traffic
+sudo iptables -A INPUT -j DROP
+
+# Allow specific ports for outgoing traffic: SSH, DNS, HTTP, HTTPS
+sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
+sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+
+# Drop all other outgoing traffic
+sudo iptables -A OUTPUT -j DROP

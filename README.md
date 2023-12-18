@@ -55,10 +55,21 @@ sudo apt-get autoremove & sudo apt-get autoremove --purge
 
 ### Main syntax
 ```sh
-# Set the maximum password age to 30 days
-sudo echo "password [success=1 default=ignore]       pam_unix.so maxage=30" >> /etc/pam.d/sshd
-# Add password complexity requirements
-sudo echo "password [success=1 default=ignore]       pam_unix.so minlen=12 minclasstype=4 minlenclasses=4" >> /etc/pam.d/sshd
+# Set the minimum password length to 12 characters
+echo "password requisite pam_pwquality.so minlen=12" | sudo tee -a /etc/pam.d/sshd
+# Require at least one uppercase letter in passwords
+echo "password requisite pam_pwquality.so ucredit=-1" | sudo tee -a /etc/pam.d/sshd
+# Require at least one lowercase letter in passwords
+echo "password requisite pam_pwquality.so lcredit=-1" | sudo tee -a /etc/pam.d/sshd
+# Require at least one digit in passwords
+echo "password requisite pam_pwquality.so dcredit=-1" | sudo tee -a /etc/pam.d/sshd
+# Require at least one special character in passwords
+echo "password requisite pam_pwquality.so ocredit=-1" | sudo tee -a /etc/pam.d/sshd
+# Enforce password history, preventing reuse of the last 5 passwords
+echo "password requisite pam_pwhistory.so remember=5" | sudo tee -a /etc/pam.d/sshd
+# Lock accounts after a defined number of unsuccessful login attempts
+echo "auth required pam_tally2.so deny=6 unlock_time=1200" | sudo tee -a /etc/pam.d/common-auth
+
 # Reload the PAM configuration
 sudo pam-auth-update
 # Restart the service

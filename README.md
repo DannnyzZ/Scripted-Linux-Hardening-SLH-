@@ -3,7 +3,7 @@
    ![Linux](https://img.shields.io/badge/Linux-333333?style=flat&logo=linux&logoColor=white)
 
    ![Linux](https://img.shields.io/badge/Linux-blue?style=flat&logo=Linux&logoColor=White)
-
+![Bash](https://img.shields.io/badge/Bash-Green?style=plastic&logo=Bash&logoColor=Red)
 ![Bash](https://img.shields.io/badge/Bash-Green?style=plastic&logo=Bash&logoColor=Red)
    ![Batch](https://img.shields.io/badge/Batch-333333?style=flat&logo=windows&logoColor=green)
 

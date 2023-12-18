@@ -16,17 +16,36 @@ I apologize for the oversight. Here are the badges with distinct colors in the N
 1. **Linux:**
    ![Linux](https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=White)
 
-2. **Bash:**
+3. **Bash:**
    ![Bash](https://img.shields.io/badge/Bash-green?style=for-the-badge&logo=Bash&logoColor=Red)
 
-3. **Batch:**
+4. **Batch:**
    ![Batch](https://img.shields.io/badge/Batch-gold?style=for-the-badge&logo=windows&logoColor=Green)
 
-4. **NIST:**
+5. **NIST:**
    ![NIST](https://img.shields.io/badge/NIST-blue?style=for-the-badge&logo=nist&logoColor=White)
 
-5. **CIS:**
+6. **CIS:**
    ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=White)
+
+   I apologize for the confusion. It seems there was a mistake in the badge color codes. Here are the corrected badges:
+
+1. **Linux:**
+   ![Linux](https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=white)
+
+2. **Bash:**
+   ![Bash](https://img.shields.io/badge/Bash-green?style=for-the-badge&logo=Bash&logoColor=red)
+
+3. **Batch:**
+   ![Batch](https://img.shields.io/badge/Batch-gold?style=for-the-badge&logo=windows&logoColor=green)
+
+4. **NIST:**
+   ![NIST](https://img.shields.io/badge/NIST-blue?style=for-the-badge&logo=nist&logoColor=white)
+
+5. **CIS:**
+   ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=white)
+
+Please use these corrected URLs for the badges in your documentation or README files.
 
 Please copy and paste the URL for the badges directly into your documentation or README files.
 

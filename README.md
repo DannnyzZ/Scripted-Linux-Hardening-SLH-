@@ -52,14 +52,18 @@ sudo systemctl restart sshd
 
 
 # Network and Services
+
+### Default syntax
+```sh
 1. Disable and/or uninstall unnecessary network services.
-# - Check status of service
+- Check status of service
 systemctl status <service_name>
 systemctl show --property=ActiveState --property=SubState <service_name>
-# - Get info about package
+- Get info about package
 systemctl list-unit-files | grep <package_name>
-# - Stop, disable, uninstall service, remove its package.
+- Stop, disable, uninstall service, remove its package.
 sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <package_name>
+```
 # - Services to stop:
 
 telnet

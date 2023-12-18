@@ -8,6 +8,12 @@
   <img src="https://img.shields.io/badge/OSHardening-black?style=for-the-badge" />
 </p>
 
+---
+
+# About SLH
+
+WRITE HERE
+
 # 🛠️ SYSTEM MAINTENANCE
 1. Update distribution
 2. Update system and services
@@ -123,3 +129,89 @@ sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP
 ```
+
+---
+
+### ✔️ Prerequisites
+
+Before you begin, ensure that you have the following prerequisites installed:
+
+>  ` Linux`
+
+### 🎮 Using SLH
+
+1. Run terminal on choosen machine.
+2. Execute commands.
+
+---
+
+### ⚠️ Warning
+
+**Using OSFortify Safely:**
+
+WRITE HERE
+
+**Use SLH wisely to enhance security while minimizing risks.**
+
+---
+
+## 🗺 Roadmap
+
+> - [X] ` Task 1: `
+
+> - [ ] ` Incoming feature 1: `
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome! Please follow these steps:
+1. Fork the project repository. This creates a copy of the project on your account that you can modify without affecting the original project.
+2. Clone the forked repository to your local machine using a Git client like Git or GitHub Desktop.
+3. Create a new branch with a descriptive name (e.g., `NEW_FIX`).
+```sh
+git checkout -b NEW_FIX
+```
+4. Make changes to the project's codebase.
+5. Commit your changes to your local branch with a clear commit message that explains the changes you've made.
+```sh
+git commit -m 'Applied changes.'
+```
+6. Push your changes to your forked repository on GitHub using the following command
+```sh
+git push origin NEW_FIX
+```
+7. Create a new pull request to the original project repository. In the pull request, describe the changes you've made and why they're necessary.
+The project maintainers will review your changes and provide feedback or merge them into the main branch.
+
+---
+
+## 📄 License
+
+Non-Commercial Use ONLY.
+
+---
+
+## 👏 Acknowledgments
+
+  `ℹ️  National Institute of Standards and Technology`
+  
+  `ℹ️  Center for Internet Security`
+
+  `ℹ️  Stack Overflow`
+
+  `ℹ️  Red Hat`
+   
+  `ℹ️  ChatGPT 4.0`
+   
+  `ℹ️  Readme-ai https://github.com/eli64s/readme-ai`
+
+  `ℹ️  Logo.com https://logo.com`
+  
+---
+
+## 🗃️ Changelog
+
+WRITE HERE
+
+---

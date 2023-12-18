@@ -9,7 +9,10 @@
 </p>
 
 About SLH - WRITE HERE
-
+Guidelines: 
+> Red Hat: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/security_guide/index
+> CIS
+> NIST
 
 ---
 
@@ -51,6 +54,12 @@ sudo apt-get autoremove & sudo apt-get autoremove --purge
 - Password age
 - Password complexity requirements
 - Implement multi-factor authentication where possible.
+2. Account restrictions for regular user
+- Disable execution, let write and read contents.
+- Disable system paths.
+- Establish the least privilege.
+
+Paths/Directories required for workstation user to work properly: 
 
 
 ### Main syntax
@@ -159,6 +168,23 @@ sudo systemctl stop yppasswdd & sudo apt remove --purge --auto-remove -y yppassw
 sudo systemctl stop ypserv & sudo apt remove --purge --auto-remove -y ypserv
 # ypxfrd
 sudo systemctl stop ypxfrd & sudo apt remove --purge --auto-remove -y ypxfrd
+```
+
+Functions: 
+Disable IPv6 Router Advertisements:
+Command:
+
+```sh
+# Disable IPv6 Router Advertisements
+sudo sysctl -w net.ipv6.conf.all.accept_ra=0
+# Disable IPv6 Autoconfiguration
+sudo sysctl -w net.ipv6.conf.all.autoconf=0
+
+# Disable Network Packet Forwarding
+sudo sysctl -w net.ipv4.ip_forward=0
+# Disable Network File System (NFS)
+sudo systemctl disable nfs-server.service
+sudo systemctl disable nfs-client.target
 ```
 
 ### Main syntax

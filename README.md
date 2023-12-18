@@ -82,9 +82,13 @@ telnet
 
 
 # - Use secure network protocols and disable insecure ones.
+1. Block protocols
 ```sh
 # - ICMP (Internet Control Message Protocol) - Drop all incoming packets from all IP's.
 sudo iptables -A INPUT -p icmp -j DROP
+```
+2. Block traffic on specific ports
+```sh
 # Allow specific ports: SSH, DNS, HTTP, HTTPS
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT

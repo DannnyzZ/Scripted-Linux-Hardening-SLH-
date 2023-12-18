@@ -15,11 +15,13 @@ sudo apt update & sudo apt upgrade
 sudo apt-get autoremove & sudo apt-get autoremove --purge
 ```
 
+
 # 👨‍💼 ACCOUNTS
 1. Password policies
 - Password age
 - Password complexity requirements
 - Implement multi-factor authentication where possible.
+
 
 ### Main syntax
 ```sh
@@ -33,7 +35,9 @@ sudo pam-auth-update
 sudo systemctl restart sshd
 ```
 
+
 # 🔳 KERNEL
+
 
 # 🗃️ FILE SYSTEM
 1. Implement proper file system permissions.

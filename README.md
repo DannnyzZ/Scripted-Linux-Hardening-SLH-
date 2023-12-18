@@ -19,10 +19,10 @@ sudo apt-get autoremove & sudo apt-get autoremove --purge
 
 
 # Accounts
-## 1. Password policies
-## - Password age
-## - Password complexity requirements
-## - Implement multi-factor authentication where possible.
+1. Password policies
+- Password age
+- Password complexity requirements
+- Implement multi-factor authentication where possible.
 
 
 ```sh
@@ -36,27 +36,24 @@ sudo pam-auth-update
 sudo systemctl restart sshd
 ```
 
-# 2.
-# 3.
-
 # Kernel
 
 
 # File System
-## - Implement proper file system permissions.
-## - Utilize file system encryption for sensitive data.
+1. Implement proper file system permissions.
+2. Utilize file system encryption for sensitive data.
 
 
 # Firewall
-## - Configure and maintain firewall rules using tools like iptables.
+1. Configure and maintain firewall rules using tools like iptables.
 
 
 # Logging and auditing
-## - Implement centralized logging for better analysis.
+1. Implement centralized logging for better analysis.
 
 
 # Network and Services
-# - Disable and/or uninstall unnecessary network services.
+1. Disable and/or uninstall unnecessary network services.
 # - Check status of service
 systemctl status <service_name>
 systemctl show --property=ActiveState --property=SubState <service_name>

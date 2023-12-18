@@ -1,5 +1,19 @@
 # Scripted Linux Hardening (SLH) v.1.0
 
+   ![Linux](https://img.shields.io/badge/Linux-333333?style=flat&logo=linux&logoColor=white)
+
+   ![Linux](https://img.shields.io/badge/Linux-blue?style=flat&logo=Linux&logoColor=White)
+
+   ![Batch](https://img.shields.io/badge/Batch-333333?style=flat&logo=windows&logoColor=green)
+
+3. **OS-Hardening:**
+   ![OS-Hardening](https://img.shields.io/badge/OS--Hardening-333333?style=flat&logo=shield)
+
+4. **Automatic:**
+   ![Automatic](https://img.shields.io/badge/Automatic-333333?style=flat&logo=automation&logoColor=white)
+
+You can copy and paste these directly into your documentation or README files.
+
 # 🛠️ SYSTEM MAINTENANCE
 1. Update distribution
 2. Update system and services

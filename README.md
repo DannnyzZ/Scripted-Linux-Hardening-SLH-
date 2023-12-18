@@ -14,19 +14,19 @@
 I apologize for the oversight. Here are the badges with distinct colors in the NIST style:
 
 1. **Linux:**
-   ![Linux](https://img.shields.io/badge/Linux-Blue?style=for-the-badge&logo=Linux&logoColor=White)
+   ![Linux](https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=White)
 
 2. **Bash:**
-   ![Bash](https://img.shields.io/badge/Bash-Green?style=for-the-badge&logo=Bash&logoColor=Red)
+   ![Bash](https://img.shields.io/badge/Bash-green?style=for-the-badge&logo=Bash&logoColor=Red)
 
 3. **Batch:**
-   ![Batch](https://img.shields.io/badge/Batch-Gold?style=for-the-badge&logo=windows&logoColor=Green)
+   ![Batch](https://img.shields.io/badge/Batch-gold?style=for-the-badge&logo=windows&logoColor=Green)
 
 4. **NIST:**
-   ![NIST](https://img.shields.io/badge/NIST-Blue?style=for-the-badge&logo=nist&logoColor=White)
+   ![NIST](https://img.shields.io/badge/NIST-blue?style=for-the-badge&logo=nist&logoColor=White)
 
 5. **CIS:**
-   ![CIS](https://img.shields.io/badge/CIS-Purple?style=for-the-badge&logo=cis&logoColor=White)
+   ![CIS](https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=White)
 
 Please copy and paste the URL for the badges directly into your documentation or README files.
 

@@ -200,7 +200,7 @@ Before you begin, ensure that you have the following prerequisites installed:
 
 ### ⚠️ Warning
 
-**Using OSFortify Safely:**
+**Using SLH Safely:**
 
 WRITE HERE
 
@@ -212,9 +212,13 @@ WRITE HERE
 
 ## 🗺 Roadmap
 
-> - [X] ` Task 1: `
+> - [X] ` Task 1: Establish firewall rules based on "implicit deny" rule`
+> - [X] ` Task 2: `
+> - [X] ` Task 3: `
 
-> - [ ] ` Incoming feature 1: `
+> - [ ] ` Incoming feature 1: Kernel isolation`
+> - [ ] ` Incoming feature 2: `
+> - [ ] ` Incoming feature 3: `
 
 
 ---

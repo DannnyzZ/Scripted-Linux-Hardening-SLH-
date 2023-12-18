@@ -70,46 +70,68 @@ systemctl list-unit-files | grep <package_name>
 sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <package_name>
 ```
 # - Services to stop:
+<details closed><summary>Services</summary>
 
-telnet
-rlogin
-rsh
-vsftpd
-finger
-authd
-netdump
-netdump-server
-nfs
-rwhod
-sendmail
-smb (Samba)
-yppasswdd
-ypserv
-ypxfrd
-telnet
+| Service       | Details                                                        |
+| ------------- | -------------------------------------------------------------- |
+| Telnet        | Protocol: N/A. Function: Telnet provides remote terminal access to a host. Security: Insecure due to plaintext transmission of data, susceptible to man-in-the-middle attacks; use secure alternatives like SSH.               |
+| Rlogin        | Protocol: N/A. Function: Rlogin allows remote login to a host. Security: Insecure, transmits data in plaintext; consider using more secure alternatives like SSH.                              |
+| Rsh           | Protocol: N/A. Function: Rsh enables remote shell access. Security: Insecure, lacks encryption; use secure alternatives such as SSH to protect remote shell sessions.                          |
+| Vsftpd        | Protocol: FTP. Function: Vsftpd is an FTP server. Security: Secure if configured properly with appropriate access controls and encryption; regularly update for the latest security patches.                  |
+| Finger        | Protocol: N/A. Function: Finger is used for user information lookup on a remote system. Security: Generally insecure, often disabled due to privacy and security concerns; not recommended for modern systems.     |
+| Authd         | Protocol: N/A. Function: Authd is an authentication daemon responsible for user authentication. Security: Security depends on the specific implementation and configuration; ensure it is configured securely.         |
+| Netdump       | Protocol: N/A. Function: Netdump facilitates the collection of network crash dumps in case of system failures. Security: Configure securely, limit access to authorized systems, and encrypt collected data if sensitive.      |
+| Netdump-Server| Protocol: N/A. Function: Netdump-Server is a network crash dump server. Security: Configure securely, limit access to authorized systems, and encrypt collected data if sensitive.           |
+| NFS           | Protocol: NFS. Function: NFS (Network File System) allows remote file access over a network. Security: Secure with proper configuration, access controls, and the use of NFSv4 with strong authentication mechanisms.                 |
+| Rwhod         | Protocol: N/A. Function: Rwhod is a daemon that maintains a central database of who is logged into the network. Security: Insecure; consider alternatives or secure configurations, and limit access to authorized systems.               |
+| Sendmail      | Protocol: SMTP. Function: Sendmail is a widely-used mail transfer agent (MTA) for sending and receiving email. Security: Secure with proper configuration, regular updates, and adherence to security best practices.               |
+| SMB (Samba)   | Protocol: SMB. Function: Samba provides file and printer sharing capabilities for Windows clients on a Unix-like system. Security: Secure with proper configuration, access controls, and adherence to security best practices. |
+| Yppasswdd     | Protocol: N/A. Function: Yppasswdd is the YP (Yellow Pages) password update daemon. Security: Secure with proper configuration and access controls; limit access to authorized systems.        |
+| Ypserv        | Protocol: N/A. Function: Ypserv is the YP (NIS) server responsible for serving Yellow Pages information. Security: Secure with proper configuration and access controls; limit access to authorized systems.                    |
+| Ypxfrd        | Protocol: N/A. Function: Ypxfrd is the YP (NIS) transfer daemon responsible for transferring NIS maps between servers. Security: Secure with proper configuration and access controls; limit access to authorized systems.             |
 
+</details>
+
+
+
+
+
+
+<details closed><summary>Services</summary>
+
+| Service                                                                   | Details                                                                                                                                                                                                            |
+| ---                                                                    | ---                                                                                                                                                                                                                |
+| Windows Defender | Protocol: N/A. Function: Antivirus and antimalware tool. Use: System protection. Security: Reliable; ensure regular updates for best protection. |
+| Windows Firewall | Protocol: N/A. Function: Filters incoming/outgoing network traffic. Use: Network security. Security: Essential for system protection; configure rules appropriately. |
+
+
+</details>
+
+<details closed><summary>Features</summary>
+- telnet, rlogin, rsh, vsftpd, finger, authd, netdump, netdump-server, nfs, rwhod, sendmail, smb (Samba), yppasswdd, ypserv, ypxfrd
 
 
 # - Use secure network protocols and disable insecure ones.
 1. Block protocols
+- ICMP, 
 ```sh
 # - ICMP (Internet Control Message Protocol) - Drop all incoming packets from all IP's.
 sudo iptables -A INPUT -p icmp -j DROP
 ```
 2. Block traffic on specific ports
+- 22, 443, 53, implicit deny
+- Optional: 80
 ```sh
-# Allow specific ports: SSH, DNS, HTTP, HTTPS
+# Allow specific ports: SSH, DNS, HTTPS
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 sudo iptables -A INPUT -p udp --dport 53 -j ACCEPT
 
 # Drop all other incoming traffic
 sudo iptables -A INPUT -j DROP
 
-# Allow specific ports for outgoing traffic: SSH, DNS, HTTP, HTTPS
+# Allow specific ports for outgoing traffic: SSH, DNS, HTTPS
 sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
-sudo iptables -A OUTPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
 sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
 

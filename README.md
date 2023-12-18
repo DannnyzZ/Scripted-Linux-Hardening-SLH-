@@ -91,6 +91,7 @@ sudo systemctl stop <service_name> && sudo apt remove --purge --auto-remove -y <
 | Ypxfrd        | Protocol: N/A. Function: Ypxfrd is the YP (NIS) transfer daemon responsible for transferring NIS maps between servers. Security: Secure with proper configuration and access controls; limit access to authorized systems.             |
 
 </details>
+
 <details closed><summary>Services</summary>
 
 1. 

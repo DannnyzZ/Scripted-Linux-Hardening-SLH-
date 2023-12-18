@@ -7,6 +7,12 @@
 ![Bash](https://img.shields.io/badge/Bash-Green?style=plastic&logo=Bash&logoColor=Red)
    ![Batch](https://img.shields.io/badge/Batch-333333?style=flat&logo=windows&logoColor=green)
 
+   ![NIST](https://img.shields.io/badge/NIST-333333?style=for-the-badge&logo=nist&logoColor=white)
+
+   ![CIS](https://img.shields.io/badge/CIS-333333?style=for-the-badge&logo=cis&logoColor=white)
+
+These use the "for-the-badge" style, which is a bit larger and more prominent. Adjust as needed for your preferences.
+
 3. **OS-Hardening:**
    ![OS-Hardening](https://img.shields.io/badge/OS--Hardening-333333?style=flat&logo=shield)
 

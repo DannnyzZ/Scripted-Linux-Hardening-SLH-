@@ -199,6 +199,9 @@ sudo iptables -A INPUT -p icmp -j DROP
 - 22, 443, 53, implicit deny
 - Optional: 80
 ```sh
+# Flush existing rules
+sudo iptables -F
+
 # Allow specific ports: SSH, DNS, HTTPS
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
@@ -211,6 +214,22 @@ sudo iptables -A INPUT -j DROP
 sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
 sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
 sudo iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+
+### Firewall evasion block
+# Drop invalid packets
+sudo iptables -A INPUT -m conntrack --ctstate INVALID -j DROP
+# Fragmented packets
+sudo iptables -A INPUT -f -j DROP
+# XMAS packets (all flags set)
+sudo iptables -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
+# Null packets (no flags set)
+sudo iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
+# SYN-FIN combination packets
+sudo iptables -A INPUT -p tcp --tcp-flags SYN,FIN SYN,FIN -j DROP
+# SYN-RST combination packets
+sudo iptables -A INPUT -p tcp --tcp-flags SYN,RST SYN,RST -j DROP
+# FIN-PSH-URG combination packets
+sudo iptables -A INPUT -p tcp --tcp-flags FIN,PSH,URG FIN,PSH,URG -j DROP
 
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP

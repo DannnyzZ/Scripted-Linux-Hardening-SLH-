@@ -236,6 +236,7 @@ sudo iptables -A INPUT -p all --match multiport --sports 23432,31338,31337,31339
 
 # Drop malicious IP's
 # https://www.projecthoneypot.org/
+# https://snort-org-site.s3.amazonaws.com/production/document_files/files/000/027/943/original/ip_filter.blf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAU7AK5ITMJQBJPARJ%2F20231225%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231225T212013Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a38647e23b9d760e8bdef781c99d6c78760b2856b9ada38ff76d619807046045
 
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP

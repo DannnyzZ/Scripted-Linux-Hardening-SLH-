@@ -234,6 +234,8 @@ sudo iptables -A INPUT -p tcp --tcp-flags FIN,PSH,URG FIN,PSH,URG -j DROP
 # Drop all traffic on specific ports associated with malware
 sudo iptables -A INPUT -p all --match multiport --sports 23432,31338,31337,31339,18006,139,12349,44444,6667,8012,80,7597,21,4000,3150,666,2140,1026,10048,64666,23,22222,6969,11000,7626,113,10100,1001,21544,3131,7777,1243,6267,25,6776,25685,27374,68,6400,1120,12345,7300,1234 -j DROP
 
+# Drop malicious IP's
+
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP
 ```

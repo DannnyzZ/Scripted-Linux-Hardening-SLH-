@@ -37,8 +37,10 @@ Guidelines:
 1. Accounts
 Root (MY_SUDO_USER):
 > root:root
+
 Regular user:
 > danny:password
+
 2. Values to change by user
 Hash value for sudo user password:
 > MY_SUDO_HASH

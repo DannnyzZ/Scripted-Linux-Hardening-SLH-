@@ -33,19 +33,38 @@ Guidelines:
 ---
 
 
+### Default users and settings for the sake of a manual
+Root:
+> root:root
+Regular user:
+> danny:password
+
+
 # 🛠️ SYSTEM MAINTENANCE
-1. Update distribution
-2. Update system and services
-3. Remove unnecessary libraries
-4. Set automatic updates every one week
+1. Update distribution.
+2. Update system and services.
+3. Remove unnecessary libraries.
+4. Set automatic updates on every boot.
 
 ```sh
+# Install unattended-upgrades for automatic updates
+sudo apt-get install unattended-upgrades
+
+# Create the following file to configure the update settings
+echo 'APT::Periodic::Update-Package-Lists "1";' | sudo tee /etc/apt/apt.conf.d/20auto-upgrades
+echo 'APT::Periodic::Unattended-Upgrade "1";' | sudo tee -a /etc/apt/apt.conf.d/20auto-upgrades
+
+# Enable automatic updates
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+
 # Update distribution (might cause problem with used apt process)
 sudo apt dist-upgrade
+
 # Update system and services
-sudo apt update & sudo apt upgrade
+sudo apt update && sudo apt upgrade
+
 # Removal of unnecessary libraries
-sudo apt-get autoremove & sudo apt-get autoremove --purge
+sudo apt-get autoremove && sudo apt-get autoremove --purge
 ```
 
 
@@ -87,6 +106,19 @@ sudo systemctl restart sshd
 
 
 # 🔳 KERNEL
+1. Automatic update and upgrade of software.
+2. GRUB password protection
+
+
+```sh
+# Open bootloader config file
+sudo nano /etc/grub.d/40_custom
+# Edit values 
+echo 'set superusers="root"' | sudo tee -a /etc/grub.d/40_custom
+echo 'password_pbkdf2 username grub.pbkdf2.sha512.10000.SALT_HASH' | sudo tee -a /etc/grub.d/40_custom
+# Update GRUB:
+sudo update-grub
+```
 
 
 # 🗃️ FILE SYSTEM

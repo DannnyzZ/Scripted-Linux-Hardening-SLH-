@@ -35,6 +35,7 @@ Guidelines:
 
 ### Default users and settings for the sake of a manual
 1. Accounts
+   
 Root (MY_SUDO_USER):
 > root:root
 

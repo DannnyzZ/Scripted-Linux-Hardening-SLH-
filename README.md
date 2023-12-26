@@ -111,6 +111,7 @@ sudo systemctl restart sshd
 # 🔳 KERNEL
 1. Automatic update and upgrade of software.
 2. GRUB password protection.
+3. Secure Bootloader/GRUB directory
 
 
 ```sh
@@ -123,6 +124,12 @@ echo 'set superusers="MY_SUDO_USER"' | sudo tee -a /etc/grub.d/40_custom
 echo 'password_pbkdf2 MY_SUDO_USER MY_SUDO_HASH' | sudo tee -a /etc/grub.d/40_custom
 # 4. Update GRUB
 sudo update-grub
+
+
+# Set the owner of the /boot directory to the root user and root group.
+sudo chown root:root /boot
+# Restrict permissions on the /boot directory to only allow the root user full access (read, write, and execute).
+sudo chmod 700 /boot
 ```
 
 

@@ -35,11 +35,9 @@ Guidelines:
 
 ### Default users and settings for the sake of a manual
 Root:
-
 > root:root
 
 Regular user:
-
 > danny:password
 
 

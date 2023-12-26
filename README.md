@@ -135,7 +135,50 @@ sudo chmod 700 /boot
 
 # 🗃️ FILE SYSTEM
 1. Implement proper file system permissions.
-2. Utilize file system encryption for sensitive data.
+   - change owner of directories to root
+   - change permissions (the least privilege)
+3. Utilize file system encryption for sensitive data.
+
+```sh
+# Set the owner of the /boot directory to the root user and root group.
+sudo chown root:root /root
+# Restrict permissions on the /boot directory to only allow the root user full access (read, write, and execute).
+sudo chmod 700 /root
+
+# Restrict access to system binaries
+sudo chown root:root /bin
+sudo chmod 711 /bin
+sudo chown root:root /sbin
+sudo chmod 711 /sbin
+sudo chown root:root /usr/bin
+sudo chmod 755 /usr/bin
+sudo chown root:root /usr/sbin
+sudo chmod 755 /usr/sbin
+
+# Restrict access to system libraries
+sudo chown root:root /lib
+sudo chmod 755 /lib
+sudo chown root:root /lib64
+sudo chmod 755 /lib64
+
+# Restrict access to system configuration files
+sudo chown root:root /etc
+sudo chmod 755 /etc
+
+# Restrict access to kernel and boot-related files
+sudo chown root:root /boot
+sudo chmod 700 /boot
+
+# Restrict access to system log files
+sudo chown root:root /var/log
+sudo chmod 755 /var/log
+
+# Restrict access to temporary directories
+sudo chown root:root /tmp
+sudo chmod 1777 /tmp
+sudo chown root:root /var/tmp
+sudo chmod 1777 /var/tmp
+```
 
 
 # 🧾 LOGGING AND AUDITING

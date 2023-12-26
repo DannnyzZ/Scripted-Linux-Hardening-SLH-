@@ -34,12 +34,14 @@ Guidelines:
 
 
 ### Default users and settings for the sake of a manual
-Root:
+1. Accounts
+Root (MY_SUDO_USER):
 > root:root
-
 Regular user:
 > danny:password
-
+2. Values to change by user
+Hash value for sudo user password:
+> MY_SUDO_HASH
 
 # 🛠️ SYSTEM MAINTENANCE
 1. Update distribution.
@@ -108,16 +110,18 @@ sudo systemctl restart sshd
 
 # 🔳 KERNEL
 1. Automatic update and upgrade of software.
-2. GRUB password protection
+2. GRUB password protection.
 
 
 ```sh
-# Open bootloader config file
-sudo nano /etc/grub.d/40_custom
-# Edit values 
-echo 'set superusers="root"' | sudo tee -a /etc/grub.d/40_custom
-echo 'password_pbkdf2 username grub.pbkdf2.sha512.10000.SALT_HASH' | sudo tee -a /etc/grub.d/40_custom
-# Update GRUB:
+# 1. Generate a hashed password (MY_NEW_HASH) and capture it for user to be authorized (MY_SUDO_USER)
+sudo grub-mkpasswd-pbkdf2
+# 2. Open the GRUB configuration file for editing
+sudo nano /etc/grub.d/40_custom 
+# 3. Edit values (replace 'MY_SUDO_USER' and 'MY_SUDO_HASH' with your values)
+echo 'set superusers="MY_SUDO_USER"' | sudo tee -a /etc/grub.d/40_custom
+echo 'password_pbkdf2 MY_SUDO_USER MY_SUDO_HASH' | sudo tee -a /etc/grub.d/40_custom
+# 4. Update GRUB
 sudo update-grub
 ```
 

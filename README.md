@@ -23,8 +23,6 @@ Guidelines:
 - [📋 Sectors of Hardening](#-sectors-of-hardening)
   - [🛠️ System Maintenance](#-system-maintenance)
   -
-
-  
 - [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)
   - [⚠️ Warning](#-Warning)

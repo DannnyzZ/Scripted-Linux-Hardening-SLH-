@@ -575,6 +575,3 @@ Non-Commercial Use ONLY.
 
 SLH v.1.0 is currently first and most up-to-date version, no previous versions were stated.
 
-
----
-

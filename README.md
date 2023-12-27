@@ -21,7 +21,7 @@ Guidelines:
 - [📒 Table of Contents](#-table-of-contents)
 - [📍 Overview](#-overview)
 - [
-  - [🛠️ SYSTEM MAINTENANCE](#-system-maintenance)
+  - [🛠️ System maintenance](#-system-maintenance)
 - [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)
   - [⚠️ Warning](#-Warning)
@@ -49,7 +49,7 @@ Regular user:
 Hash value for sudo user password:
 > MY_SUDO_HASH
 
-# 🛠️ SYSTEM MAINTENANCE
+# 🛠️ System maintenance
 
 1. Update distribution.
 2. Update system and services.

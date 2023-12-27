@@ -27,7 +27,7 @@ Guidelines:
   - [👨‍💼 Accounts](#-accounts)
   - [🔳 Kernel](#-kernel)
   - [🗃️ File System](#%EF%B8%8F-file-system)
-  - [🧾 Logging, Monitoring & Allerting](#-logging-monitoring--allerting)
+  - [🧾 Logging, Monitoring & Alerting](#-logging-monitoring--alerting)
   - [🌐 Network & Services](#-network--services)
   - [📛 Firewall & Security](#-firewall--security)
 - [🚀 Getting Started](#-getting-started)
@@ -65,7 +65,7 @@ Regular user:
 Hash value for sudo user password:
 > MY_SUDO_HASH
 
-# 🛠️ System maintenance
+# 🛠️ System Maintenance
 
 1. Update distribution.
 2. Update system and services.
@@ -207,7 +207,7 @@ sudo chmod 1777 /var/tmp
 ---
 
 
-# 🧾 Logging, monitoring & allerting
+# 🧾 Logging, Monitoring & Alerting
 1. Implement centralized logging for better analysis.
 2. Adjust logging level to fit needs.
 

@@ -27,7 +27,7 @@ Guidelines:
   - [🗃️ File System](#-file-system)
   - [🧾 Logging, monitoring & allerting](#-Logging,-monitoring-&-allerting)
   - [🌐 Network & Services](#-network-&-services)
-  - [📛 Firewall](#-firewall)
+  - [📛 Firewall & Security](#-firewall-&-security)
 - [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)
   - [⚠️ Warning](#-Warning)
@@ -358,7 +358,7 @@ sudo systemctl disable nfs-client.target
 ---
 
 
-# 📛 Firewall and Security 
+# 📛 Firewall & Security 
 ### Iptables
 1. Use secure network protocols and disable insecure ones.
 1. Block protocols

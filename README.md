@@ -189,12 +189,19 @@ sudo chmod 1777 /var/tmp
 ---
 
 
-# 🧾 LOGGING AND AUDITING
+# 🧾 LOGGING, MONITORING AND ALERTING
 1. Implement centralized logging for better analysis.
 
-### Logwatch
+### Rsyslog
+1. Install and configure rsyslog
+```sh
+sudo apt install rsyslog
 
 
+get successfuly login or unsuccessfuly login u
+
+
+```
 ---
 
 
@@ -360,19 +367,26 @@ sudo iptables -A OUTPUT -j DROP
 ```sh
 ### Install requirements
 # Install Python (version 3.5 or later)
-sudo apt install python3
+sudo apt install python3 -y
 # Install pip (Python package installer)
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 # Install setuptools and distutils
-sudo apt install python3-setuptools python3-distutils
+sudo apt install python3-setuptools python3-distutils -y
 # Install PyPy3
-sudo apt install pypy3
+sudo apt install pypy3 -y
 
 ### Install fail2ban
+# Install fail2ban
 apt-get install fail2ban
-
+#
 
 here
+```
+
+How to use fail2ban
+Main syntax:
+```sh
+fail2ban-client -h
 ```
 
 

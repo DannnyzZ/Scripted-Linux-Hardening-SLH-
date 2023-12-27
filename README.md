@@ -206,6 +206,7 @@ sudo chmod 1777 /var/tmp
 ## Event Log Categories
 
 <details closed><summary>Event Log Categories</summary>
+  
 | Event Log | General Category | Specific Events |
 |---|---|---|
 | auth,authpriv.* | Authentication, Authorization, Access Control | Successful logins, failed logins, password changes, account lockouts, account unlocks, account modifications, privilege escalation, root logins, Sudo usage |

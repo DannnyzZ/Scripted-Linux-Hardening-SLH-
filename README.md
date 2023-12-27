@@ -20,8 +20,11 @@ Guidelines:
 ## 📒 Table of Contents
 - [📒 Table of Contents](#-table-of-contents)
 - [📍 Overview](#-overview)
-- [
-  - [🛠️ System maintenance](#-system-maintenance)
+- [📋 Sectors of Hardening](#-sectors-of-hardening)
+  - [🛠️ System Maintenance](#-system-maintenance)
+  -
+
+  
 - [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)
   - [⚠️ Warning](#-Warning)

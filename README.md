@@ -191,6 +191,15 @@ sudo chmod 1777 /var/tmp
 
 # 🧾 LOGGING, MONITORING AND ALERTING
 1. Implement centralized logging for better analysis.
+2. Adjust logging level to fit needs:
+- Emergency (emerg): System is unusable.
+- Alert (alert): Action must be taken immediately.
+- Critical (crit): Critical conditions.
+- Error (err): Error conditions.
+- Warning (warning): Warning conditions.
+- Notice (notice): Normal but significant condition.
+- Informational (info): Informational messages.
+- Debug (debug): Debug-level messages.
 
 ### Rsyslog
 1. Install and configure rsyslog

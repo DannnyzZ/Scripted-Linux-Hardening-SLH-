@@ -191,7 +191,7 @@ sudo chmod 1777 /var/tmp
 
 # 🧾 LOGGING, MONITORING AND ALERTING
 1. Implement centralized logging for better analysis.
-2. Adjust logging level to fit needs:
+2. Adjust logging level to fit needs.
 
 <details closed><summary>Event Log Categories</summary>
 
@@ -207,9 +207,6 @@ sudo chmod 1777 /var/tmp
 | Debug (debug) | Debug-level messages. |
 
 </details>
-
-3. Categories of events:
-  Event Log: auth,authpriv.*
 
 ## Event Log Categories
 
@@ -228,59 +225,37 @@ sudo chmod 1777 /var/tmp
 
 </details>
 
-
 ### Rsyslog
-1. Install and configure rsyslog
+1. Install rsyslog
 ```sh
 # Install rsyslog
 sudo apt install rsyslog
+```
+
+2. Configure rsyslog
+```sh
 # Authentication, Authorization, Access Control
 echo "auth,authpriv.*            /var/log/auth.log" | sudo tee -a /etc/rsyslog.conf
+# High-Priority Security Events
 echo "log-emergency              /var/log/emergency.log" | sudo tee -a /etc/rsyslog.conf
-
-# System and Service Startup/Shutdown
+# High-Priority Security Events
 echo "cron.*                     /var/log/cron.log" | sudo tee -a /etc/rsyslog.conf
+# System Scheduling and Execution
 echo "daemon.*                   /var/log/daemon.log" | sudo tee -a /etc/rsyslog.conf
-echo "kern.*                     /var/log/kern.log" | sudo tee -a /etc/rsyslog.conf
+# User-Related Activities
 echo "user.*                     /var/log/user.log" | sudo tee -a /etc/rsyslog.conf
-
-# Network Activities
+# System Kernel and Hardware Events
 echo "kern.*                     /var/log/kern.log" | sudo tee -a /etc/rsyslog.conf
+# Printing and Printer-Related Activities
 echo "lpr.*                      /var/log/lpr.log" | sudo tee -a /etc/rsyslog.conf
+# Mail and Email Server Activity
 echo "mail.*                     /var/log/mail.log" | sudo tee -a /etc/rsyslog.conf
-
-# Security Software Alerts
-echo "auth,authpriv.*            /var/log/auth.log" | sudo tee -a /etc/rsyslog.conf
-echo "cron.*                     /var/log/cron.log" | sudo tee -a /etc/rsyslog.conf
-echo "daemon.*                   /var/log/daemon.log" | sudo tee -a /etc/rsyslog.conf
-
-# File and Directory Changes
-echo "kern.*                     /var/log/kern.log" | sudo tee -a /etc/rsyslog.conf
-echo "lpr.*                      /var/log/lpr.log" | sudo tee -a /etc/rsyslog.conf
-echo "mail.*                     /var/log/mail.log" | sudo tee -a /etc/rsyslog.conf
-
-# Application-Level Events
-echo "auth,authpriv.*            /var/log/auth.log" | sudo tee -a /etc/rsyslog.conf
-echo "cron.*                     /var/log/cron.log" | sudo tee -a /etc/rsyslog.conf
-echo "daemon.*                   /var/log/daemon.log" | sudo tee -a /etc/rsyslog.conf
-
-# System Resource Usage, Hardware and Device Events
-echo "kern.*                     /var/log/kern.log" | sudo tee -a /etc/rsyslog.conf
-echo "lpr.*                      /var/log/lpr.log" | sudo tee -a /etc/rsyslog.conf
-echo "mail.*                     /var/log/mail.log" | sudo tee -a /etc/rsyslog.conf
-echo "cron.*                     /var/log/cron.log" | sudo tee -a /etc/rsyslog.conf
-echo "daemon.*                   /var/log/daemon.log" | sudo tee -a /etc/rsyslog.conf
-
-# Audit Logs
-echo "cron.*                     /var/log/cron.log" | sudo tee -a /etc/rsyslog.conf
-
-
-
-
 
 # Restart rsyslog
 sudo service rsyslog restart
 ```
+
+
 ---
 
 

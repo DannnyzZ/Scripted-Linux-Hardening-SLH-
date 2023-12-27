@@ -21,7 +21,7 @@ Guidelines:
 - [📒 Table of Contents](#-table-of-contents)
 - [📍 Overview](#-overview)
 - [
-  -[🛠️ SYSTEM MAINTENANCE](#-system-maintenance)
+  - [🛠️ SYSTEM MAINTENANCE](#-system-maintenance)
 - [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)
   - [⚠️ Warning](#-Warning)

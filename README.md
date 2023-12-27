@@ -205,8 +205,7 @@ sudo chmod 1777 /var/tmp
 
 ## Event Log Categories
 
-## Event Log Categories
-
+<details closed><summary>Event Log Categories</summary>
 | Event Log | General Category | Specific Events |
 |---|---|---|
 | auth,authpriv.* | Authentication, Authorization, Access Control | Successful logins, failed logins, password changes, account lockouts, account unlocks, account modifications, privilege escalation, root logins, Sudo usage |
@@ -217,7 +216,7 @@ sudo chmod 1777 /var/tmp
 | kern.* | System Kernel and Hardware Events | Hardware errors, software errors, system calls, interrupts, memory management, process management |
 | lpr.* | Printing and Printer-Related Activities | Print job submissions, print job failures, print job errors, print job status changes, print queue management |
 | mail.* | Mail and Email Server Activity | Email sent, email received, email errors, email delivery failures, email content filtering, email security scanning |
-
+</details>
 
 
 ### Rsyslog

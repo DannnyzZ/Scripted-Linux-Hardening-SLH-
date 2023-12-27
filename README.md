@@ -278,7 +278,7 @@ sudo systemctl disable nfs-server.service
 sudo systemctl disable nfs-client.target
 ```
 
-### Main syntax
+### Firewall - iptables, 
 1. Use secure network protocols and disable insecure ones.
 1. Block protocols
 - ICMP, 
@@ -333,6 +333,14 @@ sudo iptables -A INPUT -p all --match multiport --sports 23432,31338,31337,31339
 sudo iptables -A OUTPUT -j DROP
 
 1. Fail2Ban - anti brute-force logging service
+- Install service
+- Configure service
+- Adjust logging and "ban" rate requirements
+
+
+
+
+
 ```
 
 

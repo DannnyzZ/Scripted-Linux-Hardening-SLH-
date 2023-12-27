@@ -360,9 +360,8 @@ sudo systemctl disable nfs-client.target
 
 # 📛 Firewall & Security
 
----
 
-## Firewall & Security
+---
 
 
 ### Iptables

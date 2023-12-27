@@ -48,6 +48,7 @@ Hash value for sudo user password:
 > MY_SUDO_HASH
 
 # 🛠️ SYSTEM MAINTENANCE
+
 1. Update distribution.
 2. Update system and services.
 3. Remove unnecessary libraries.
@@ -189,7 +190,7 @@ sudo chmod 1777 /var/tmp
 1. Implement centralized logging for better analysis.
 
 
-# 📛 NETWORK, SERVICES, FIREWALL
+# 📛 NETWORK & SERVICES
 1. Configure and maintain firewall rules using tools like iptables.
 ### Default syntax
 ```sh
@@ -277,8 +278,8 @@ sudo sysctl -w net.ipv4.ip_forward=0
 sudo systemctl disable nfs-server.service
 sudo systemctl disable nfs-client.target
 ```
-
-### Firewall - iptables, 
+# 📛 Firewall and Security 
+### Iptables
 1. Use secure network protocols and disable insecure ones.
 1. Block protocols
 - ICMP, 
@@ -331,16 +332,31 @@ sudo iptables -A INPUT -p all --match multiport --sports 23432,31338,31337,31339
 
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP
+```
 
-1. Fail2Ban - anti brute-force logging service
-- Install service
+
+### Fail2Ban
+- Install requirements & software
 - Configure service
 - Adjust logging and "ban" rate requirements
 
 
+```sh
+### Install requirements
+# Install Python (version 3.5 or later)
+sudo apt install python3
+# Install pip (Python package installer)
+sudo apt install python3-pip
+# Install setuptools and distutils
+sudo apt install python3-setuptools python3-distutils
+# Install PyPy3
+sudo apt install pypy3
+
+### Install fail2ban
+apt-get install fail2ban
 
 
-
+here
 ```
 
 
@@ -353,11 +369,13 @@ Before you begin, ensure that you have the following prerequisites installed:
 
 >  ` Linux`
 
+
+
 ### 🎮 Using SLH
 
 1. Run terminal on choosen machine.
-2. Execute commands.
-
+2. Update your system - optionally upgrade distribution
+3. Choose section of hardening scripts and execute them with elevated privileges.
 
 ---
 

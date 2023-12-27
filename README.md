@@ -209,62 +209,14 @@ sudo chmod 1777 /var/tmp
 
 | Event Log | Specific Events |
 |---|---|
-| auth,authpriv.* | Successful logins, failed logins, password changes, account lockouts, account unlocks, account modifications, privilege escalation, root logins, Sudo usage |
-| log-emergency | Kernel panics, system crashes, data corruption, malware infections, denial-of-service attacks, brute-force attacks, unauthorized access |
-| cron.* | Cron job failures, cron job timeouts, cron job collisions, cron job race conditions, cron job misconfiguration |
-| daemon.* | Service startups, service shutdowns, service errors, process restarts, process crashes, process hangs, process memory leaks |
-| user.* | User account creations, user account deletions, user account modifications, user password changes, user group changes, user home directory changes |
-| kern.* | Hardware errors, software errors, system calls, interrupts, memory management, process management |
-| lpr.* | Print job submissions, print job failures, print job errors, print job status changes, print queue management |
-| mail.* | Email sent, email received, email errors, email delivery failures, email content filtering, email security scanning |
-
-
-
-General Category: Authentication, Authorization, Access Control
-
-This event log captures all events related to user authentication, authorization, and access control. This includes events such as login and logout attempts, password changes, access to sensitive resources, and privilege escalation.
-
-Event Log: log-emergency
-
-General Category: High-Priority Security Events
-
-This event log captures all high-priority security events that may indicate a system compromise or security breach. This includes events such as kernel panics, system crashes, data corruption, malware infections, and unauthorized access attempts.
-
-Event Log: cron.*
-
-General Category: System Scheduling and Execution
-
-This event log captures all events related to the execution of cron jobs, which are scheduled tasks that run periodically. This includes events such as job start, job completion, and job errors.
-
-Event Log: daemon.*
-
-General Category: System Services and Processes
-
-This event log captures all events related to system services and processes. This includes events such as service startup and shutdown, process creation and termination, and process errors.
-
-Event Log: user.*
-
-General Category: User-Related Activities
-
-This event log captures all events related to user activity on the system. This includes events such as login and logout attempts, user account changes, and application usage.
-
-Event Log: kern.*
-
-General Category: System Kernel and Hardware Events
-
-This event log captures all events related to the kernel and hardware of the system. This includes events such as kernel messages, hardware errors, and system performance metrics.
-
-Event Log: lpr.*
-
-General Category: Printing and Printer-Related Activities
-
-This event log captures all events related to printing and printer activity on the system. This includes events such as job submission and retrieval, printer status changes, and printer errors.
-
-Event Log: mail.*
-
-General Category: Mail and Email Server Activity
-
-This event log captures all events related to the mail and email server on the system. This includes events such as email sent and received, email errors, and mail server configuration changes.
+| auth,authpriv.* - Authentication, Authorization, Access Control | Successful logins, failed logins, password changes, account lockouts, account unlocks, account modifications, privilege escalation, root logins, Sudo usage |
+| log-emergency - High-Priority Security Events | Kernel panics, system crashes, data corruption, malware infections, denial-of-service attacks, brute-force attacks, unauthorized access |
+| cron.* - System Scheduling and Execution | Cron job failures, cron job timeouts, cron job collisions, cron job race conditions, cron job misconfiguration |
+| daemon.* - System Services and Processes | Service startups, service shutdowns, service errors, process restarts, process crashes, process hangs, process memory leaks |
+| user.* - User-Related Activities | User account creations, user account deletions, user account modifications, user password changes, user group changes, user home directory changes |
+| kern.* - System Kernel and Hardware Events | Hardware errors, software errors, system calls, interrupts, memory management, process management |
+| lpr.* - Printing and Printer-Related Activities | Print job submissions, print job failures, print job errors, print job status changes, print queue management |
+| mail.* - Mail and Email Server Activity | Email sent, email received, email errors, email delivery failures, email content filtering, email security scanning |
 
 
 ### Rsyslog

@@ -207,16 +207,17 @@ sudo chmod 1777 /var/tmp
 
 ## Event Log Categories
 
-| Event Log | Specific Events |
-|---|---|
-| auth,authpriv.* - Authentication, Authorization, Access Control | Successful logins, failed logins, password changes, account lockouts, account unlocks, account modifications, privilege escalation, root logins, Sudo usage |
-| log-emergency - High-Priority Security Events | Kernel panics, system crashes, data corruption, malware infections, denial-of-service attacks, brute-force attacks, unauthorized access |
-| cron.* - System Scheduling and Execution | Cron job failures, cron job timeouts, cron job collisions, cron job race conditions, cron job misconfiguration |
-| daemon.* - System Services and Processes | Service startups, service shutdowns, service errors, process restarts, process crashes, process hangs, process memory leaks |
-| user.* - User-Related Activities | User account creations, user account deletions, user account modifications, user password changes, user group changes, user home directory changes |
-| kern.* - System Kernel and Hardware Events | Hardware errors, software errors, system calls, interrupts, memory management, process management |
-| lpr.* - Printing and Printer-Related Activities | Print job submissions, print job failures, print job errors, print job status changes, print queue management |
-| mail.* - Mail and Email Server Activity | Email sent, email received, email errors, email delivery failures, email content filtering, email security scanning |
+| Event Log | General Category | Specific Events |
+|---|---|---|
+| auth,authpriv.* | Authentication, Authorization, Access Control | Successful logins, failed logins, password changes, account lockouts, account unlocks, account modifications, privilege escalation, root logins, Sudo usage |
+| log-emergency | High-Priority Security Events | Kernel panics, system crashes, data corruption, malware infections, denial-of-service attacks, brute-force attacks, unauthorized access |
+| cron.* | System Scheduling and Execution | Cron job failures, cron job timeouts, cron job collisions, cron job race conditions, cron job misconfiguration |
+| daemon.* | System Services and Processes | Service startups, service shutdowns, service errors, process restarts, process crashes, process hangs, process memory leaks |
+| user.* | User-Related Activities | User account creations, user account deletions, user account modifications, user password changes, user group changes, user home directory changes |
+| kern.* | System Kernel and Hardware Events | Hardware errors, software errors, system calls, interrupts, memory management, process management |
+| lpr.* | Printing and Printer-Related Activities | Print job submissions, print job failures, print job errors, print job status changes, print queue management |
+| mail.* | Mail and Email Server Activity | Email sent, email received, email errors, email delivery failures, email content filtering, email security scanning |
+
 
 
 ### Rsyslog

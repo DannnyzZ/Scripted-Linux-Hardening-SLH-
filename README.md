@@ -21,7 +21,7 @@ Guidelines:
 - [📒 Table of Contents](#-table-of-contents)
 - [📍 Overview](#-overview)
 - [📋 Sectors of Hardening](#-sectors-of-hardening)
-  - [🛠️ System Maintenance](#-system-maintenance)
+  - [🛠️ System Maintenance](#%EF%B8%8F-system-maintenance)
   - [👨‍💼 Accounts](#-accounts)
   - [🔳 Kernel](#-kernel)
   - [🗃️ File System](#-file-system)

@@ -382,9 +382,7 @@ Before you begin, ensure that you have the following prerequisites installed:
 
 ### ⚠️ Warning
 
-**Using SLH Safely:**
-
-While developing SLH (Secure Linux Hardening) scripts, I encountered instances where improper modifications led to system failures or *full bricking*. Deploying these scripts in a production environment without thorough testing can result in irreversible damage to critical system functions. Working on *snapshots* is highly recommended in this manner.
+While developing SLH (Secure Linux Hardening) scripts, I encountered instances where improper modifications led to system failures or **full bricking**. Deploying these scripts in a production environment without thorough testing can result in irreversible damage to critical system functions. Working on **snapshots** is highly recommended in this manner.
 
 Key Points:
 

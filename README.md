@@ -22,7 +22,12 @@ Guidelines:
 - [📍 Overview](#-overview)
 - [📋 Sectors of Hardening](#-sectors-of-hardening)
   - [🛠️ System Maintenance](#-system-maintenance)
-  -
+  - [👨‍💼 Accounts](#-accounts)
+  - [🔳 Kernel](#-kernel)
+  - [🗃️ File System](#-file-system)
+  - [🧾 Logging, monitoring & allerting](#-Logging,-monitoring-&-allerting)
+  - [🌐 Network & Services](#-network-&-services)
+  - [📛 Firewall](#-firewall)
 - [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)
   - [⚠️ Warning](#-Warning)
@@ -79,7 +84,7 @@ sudo apt-get autoremove && sudo apt-get autoremove --purge
 ```
 
 
-# 👨‍💼 ACCOUNTS
+# 👨‍💼 Accounts
 1. Password policies
 - Password age
 - Password complexity requirements
@@ -116,7 +121,7 @@ sudo systemctl restart sshd
 ```
 
 
-# 🔳 KERNEL
+# 🔳 Kernel
 1. Automatic update and upgrade of software.
 2. GRUB password protection.
 3. Secure Bootloader/GRUB directory
@@ -141,7 +146,7 @@ sudo chmod 700 /boot
 ```
 
 
-# 🗃️ FILE SYSTEM
+# 🗃️ File System
 1. Implement proper file system permissions.
    - change owner of directories to root
    - change permissions (the least privilege)
@@ -192,7 +197,7 @@ sudo chmod 1777 /var/tmp
 ---
 
 
-# 🧾 LOGGING, MONITORING AND ALERTING
+# 🧾 Logging, monitoring & allerting
 1. Implement centralized logging for better analysis.
 2. Adjust logging level to fit needs.
 
@@ -260,7 +265,7 @@ sudo service rsyslog restart
 ---
 
 
-# 📛 NETWORK & SERVICES
+# 🌐 Network & Services
 1. Configure and maintain firewall rules using tools like iptables.
 ### Default syntax
 ```sh

@@ -24,7 +24,7 @@ Guidelines:
   - [🛠️ System Maintenance](#%EF%B8%8F-system-maintenance)
   - [👨‍💼 Accounts](#-accounts)
   - [🔳 Kernel](#-kernel)
-  - [🗃️ File System](#-file-system)
+  - [🗃️ File System](#%EF%B8%8F-file-system)
   - [🧾 Logging, Monitoring & Allerting](#-logging,-monitoring-&-allerting)
   - [🌐 Network & Services](#-network-&-services)
   - [📛 Firewall & Security](#-firewall--security)

@@ -35,7 +35,7 @@ Guidelines:
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 - [👏 Acknowledgments](#-acknowledgments)
-- [🗃️ Changelog](#-changelog)
+- [🗃️ Changelog](#%EF%B8%8F-changelog)
 
 
 ---

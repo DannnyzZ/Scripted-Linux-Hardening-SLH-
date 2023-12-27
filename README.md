@@ -331,6 +331,8 @@ sudo iptables -A INPUT -p all --match multiport --sports 23432,31338,31337,31339
 
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP
+
+1. Fail2Ban - anti brute-force logging service
 ```
 
 

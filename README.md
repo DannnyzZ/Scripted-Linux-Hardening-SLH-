@@ -26,7 +26,7 @@ Guidelines:
   - [🔳 Kernel](#-kernel)
   - [🗃️ File System](#%EF%B8%8F-file-system)
   - [🧾 Logging, Monitoring & Allerting](#-logging-monitoring--allerting)
-  - [🌐 Network & Services](#-network-&-services)
+  - [🌐 Network & Services](#-network--services)
   - [📛 Firewall & Security](#-firewall--security)
 - [🚀 Getting Started](#-getting-started)
   - [✔️ Prerequisites](#️-prerequisites)

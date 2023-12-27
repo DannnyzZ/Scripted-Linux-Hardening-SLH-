@@ -226,30 +226,28 @@ sudo chmod 1777 /var/tmp
 </details>
 
 ### Rsyslog
-1. Install rsyslog
+1. Install rsyslog:
 ```sh
 # Install rsyslog
 sudo apt install rsyslog
 ```
 
-2. Configure rsyslog
+2. Configure rsyslog with severity levels:
 ```sh
 # Authentication, Authorization, Access Control
-echo "auth,authpriv.*            /var/log/auth.log" | sudo tee -a /etc/rsyslog.conf
+ifFacility AUTHPRIV auth,authpriv.* ifSeverity >= info /var/log/auth.log
 # High-Priority Security Events
-echo "log-emergency              /var/log/emergency.log" | sudo tee -a /etc/rsyslog.conf
-# High-Priority Security Events
-echo "cron.*                     /var/log/cron.log" | sudo tee -a /etc/rsyslog.conf
+ifSeverity !emerg.* log-emergency /var/log/emergency.log
 # System Scheduling and Execution
-echo "daemon.*                   /var/log/daemon.log" | sudo tee -a /etc/rsyslog.conf
+ifSeverity !emerg.* daemon.* ifSeverity >= info /var/log/daemon.log
 # User-Related Activities
-echo "user.*                     /var/log/user.log" | sudo tee -a /etc/rsyslog.conf
+ifSeverity !emerg.* user.* ifSeverity >= info /var/log/user.log
 # System Kernel and Hardware Events
-echo "kern.*                     /var/log/kern.log" | sudo tee -a /etc/rsyslog.conf
+ifSeverity !emerg.* kern.* ifSeverity >= info /var/log/kern.log
 # Printing and Printer-Related Activities
-echo "lpr.*                      /var/log/lpr.log" | sudo tee -a /etc/rsyslog.conf
+ifSeverity !emerg.* lpr.* ifSeverity >= info /var/log/lpr.log
 # Mail and Email Server Activity
-echo "mail.*                     /var/log/mail.log" | sudo tee -a /etc/rsyslog.conf
+ifSeverity !emerg.* mail.* ifSeverity >= info /var/log/mail.log
 
 # Restart rsyslog
 sudo service rsyslog restart

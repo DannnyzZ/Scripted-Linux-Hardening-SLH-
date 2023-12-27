@@ -186,8 +186,16 @@ sudo chmod 1777 /var/tmp
 ```
 
 
+---
+
+
 # 🧾 LOGGING AND AUDITING
 1. Implement centralized logging for better analysis.
+
+### Logwatch
+
+
+---
 
 
 # 📛 NETWORK & SERVICES
@@ -278,6 +286,11 @@ sudo sysctl -w net.ipv4.ip_forward=0
 sudo systemctl disable nfs-server.service
 sudo systemctl disable nfs-client.target
 ```
+
+
+---
+
+
 # 📛 Firewall and Security 
 ### Iptables
 1. Use secure network protocols and disable insecure ones.
@@ -333,6 +346,9 @@ sudo iptables -A INPUT -p all --match multiport --sports 23432,31338,31337,31339
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP
 ```
+
+
+---
 
 
 ### Fail2Ban

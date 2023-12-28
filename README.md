@@ -371,9 +371,6 @@ sudo systemctl disable nfs-client.target
 # 📛 Firewall & Security
 
 
----
-
-
 ### Iptables
 1. Use secure network protocols and disable insecure ones.
 1. Block protocols
@@ -475,12 +472,12 @@ Before you begin, ensure that you have the following prerequisites installed:
 >  ` Linux`
 
 
-
 ### 🎮 Using SLH
 
 1. Run terminal on choosen machine.
 2. Update your system - optionally upgrade distribution
 3. Choose section of hardening scripts and execute them with elevated privileges.
+
 
 ---
 

@@ -72,6 +72,10 @@ Hash value for sudo user password:
 3. Remove unnecessary libraries.
 4. Set automatic updates on every boot.
 
+### Unattended-upgrades 
+
+Unattended-upgrades is a package available on Linux systems that automates the process of installing security updates. It is commonly used to keep the operating system and installed software up-to-date with the latest security patches.
+
 ```sh
 # Install unattended-upgrades for automatic updates
 sudo apt-get install unattended-upgrades
@@ -244,6 +248,9 @@ sudo chmod 1777 /var/tmp
 </details>
 
 ### Rsyslog
+
+Rsyslog is a versatile and powerful system logging daemon for Linux and Unix-like systems. It's widely used for collecting, aggregating, and routing system log messages from various sources, such as daemons, applications, and services.
+
 1. Install rsyslog:
 ```sh
 # Install rsyslog
@@ -372,6 +379,9 @@ sudo systemctl disable nfs-client.target
 
 
 ### Iptables
+
+Iptables is a user-space utility that allows a system administrator to configure the IP packet filter rules of the Linux kernel firewall, implemented by different Netfilter modules. It offers a flexible and powerful interface for managing network traffic rules, enabling the creation of sophisticated firewall policies.
+
 1. Use secure network protocols and disable insecure ones.
 1. Block protocols
 - ICMP, 
@@ -431,6 +441,9 @@ sudo iptables -A OUTPUT -j DROP
 
 
 ### Fail2Ban
+
+Fail2Ban scans log files like /var/log/auth.log and bans IP addresses conducting too many failed login attempts. It does this by updating system firewall rules to reject new connections from those IP addresses, for a configurable amount of time.
+
 - Install requirements & software
 - Configure service
 - Adjust logging and "ban" rate requirements

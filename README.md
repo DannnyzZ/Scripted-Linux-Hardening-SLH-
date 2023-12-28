@@ -430,8 +430,8 @@ echo 'LogLevel INFO' | sudo tee -a /etc/ssh/sshd_config
 ### Firewall config of SSH
 # Drop all SSH connection attempts from the IP address [IP address] that fail to complete within 10 retries. 
 iptables -A INPUT -p tcp -s [IP address] -j REJECT --syn --max-retries 10
-# iptables -A INPUT -m mac --mac-source [MAC address] -p tcp -j REJECT --syn --max-retries 10
-Drop all SSH connection attempts from the MAC address [MAC address] that fail to complete within 10 retries
+# Drop all SSH connection attempts from the MAC address [MAC address] that fail to complete within 10 retries
+iptables -A INPUT -m mac --mac-source [MAC address] -p tcp -j REJECT --syn --max-retries 10
 
 
 # Launch OpenSSH on boot

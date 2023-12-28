@@ -65,6 +65,12 @@ Regular user:
 Hash value for sudo user password:
 > MY_SUDO_HASH
 
+Public key
+> MY_PUBLIC_KEY
+
+Private key
+> MY_PRIVATE_KEY
+
 # 🛠️ System Maintenance
 
 1. Update distribution.
@@ -369,6 +375,71 @@ sudo sysctl -w net.ipv4.ip_forward=0
 # Disable Network File System (NFS)
 sudo systemctl disable nfs-server.service
 sudo systemctl disable nfs-client.target
+```
+
+
+### SSH client/server hardening
+
+1. Install OpenSSH client/server
+2. Configure and harden OpenSSH client/server
+
+```sh
+# 1. Install OpenSSH server & client
+sudo apt install openssh-server
+
+# 2. Configure OpenSSH and harden it
+### CLIENT ###
+# Disable root login
+echo 'PermitRootLogin no' | sudo tee -a /.ssh/config
+
+# Disable password authentication
+echo 'PasswordAuthentication no' | sudo tee -a /.ssh/config
+
+# Enable SSH key authentication
+echo 'PubkeyAuthentication yes' | sudo tee -a /.ssh/config
+
+# Use strong ciphers
+echo 'Ciphers AES-256-CBC' | sudo tee -a /.ssh/config
+echo 'Macs HMAC-SHA256' | sudo tee -a /.ssh/config
+
+# Enable logging
+echo 'SyslogFacility AUTH' | sudo tee -a /.ssh/config
+echo 'LogLevel INFO' | sudo tee -a /.ssh/config
+
+### SERVER ###
+# Disable root login
+echo 'PermitRootLogin no' | sudo tee -a /etc/ssh/sshd_config
+
+# Disable password authentication
+echo 'PasswordAuthentication no' | sudo tee -a /etc/ssh/sshd_config
+
+# Enable SSH key authentication
+echo 'PubkeyAuthentication yes' | sudo tee -a /etc/ssh/sshd_config
+
+# Use strong ciphers
+echo 'Ciphers AES-256-CBC' | sudo tee -a /etc/ssh/sshd_config
+echo 'Macs HMAC-SHA256' | sudo tee -a /etc/ssh/sshd_config
+
+# Enable logging
+echo 'SyslogFacility AUTH' | sudo tee -a /etc/ssh/sshd_config
+echo 'LogLevel INFO' | sudo tee -a /etc/ssh/sshd_config
+
+
+
+
+### Firewall config of SSH
+# Drop all SSH connection attempts from the IP address [IP address] that fail to complete within 10 retries. 
+iptables -A INPUT -p tcp -s [IP address] -j REJECT --syn --max-retries 10
+# iptables -A INPUT -m mac --mac-source [MAC address] -p tcp -j REJECT --syn --max-retries 10
+Drop all SSH connection attempts from the MAC address [MAC address] that fail to complete within 10 retries
+
+
+# Launch OpenSSH on boot
+sudo systemctl enable openssh-server
+
+
+# Restart OpenSSH
+sudo systemctl restart openssh-server
 ```
 
 

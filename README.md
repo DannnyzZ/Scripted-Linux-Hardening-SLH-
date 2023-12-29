@@ -1,3 +1,11 @@
+<div align="center">
+<h1 align="center">
+<img src="https://github.com/DannnyzZ/Scripted-Linux-Hardening-SLH-/blob/eb9ca22ddd615bb18b5a789316bdf9e0f836445f/SLH.png" >
+<br>
+</h1>
+<p align="center">
+</p>
+
 # Scripted Linux Hardening (SLH) v.1.0 UNDER DEVELOPMENT
 
 <p align="center">

@@ -386,13 +386,15 @@ sudo systemctl disable nfs-client.target
 
 1. Install OpenSSH client/server
 2. Configure and harden OpenSSH client/server
+3. Firewall config for OpenSSH in iptables
+4. Launch OpenSSH on boot
 
 ```sh
-# 1. Install OpenSSH server & client
+### 1. Install OpenSSH server & client
 sudo apt install openssh-server
 
-# 2. Configure OpenSSH and harden it
-### CLIENT ###
+### 2. Configure OpenSSH and harden it
+####### CLIENT #######
 # Disable root login
 echo 'PermitRootLogin no' | sudo tee -a /etc/ssh/ssh_config
 
@@ -414,7 +416,7 @@ echo 'LogLevel INFO' | sudo tee -a /etc/ssh/ssh_config
 echo 'PermitEmptyPasswords no' | sudo tee -a /etc/ssh/ssh_config
 
 
-### SERVER ###
+####### SERVER #######
 # Disable root login
 echo 'PermitRootLogin no' | sudo tee -a /etc/ssh/sshd_config
 
@@ -436,14 +438,14 @@ echo 'LogLevel INFO' | sudo tee -a /etc/ssh/sshd_config
 echo 'PermitEmptyPasswords no' | sudo tee -a /etc/ssh/sshd_config
 
 
-### Firewall config of SSH
+### 3. Firewall config for OpenSSH in iptables
 # Drop all SSH connection attempts from the IP address [IP address] that fail to complete within 10 retries. 
 iptables -A INPUT -p tcp -s [IP address] -j REJECT --syn --max-retries 10
 # Drop all SSH connection attempts from the MAC address [MAC address] that fail to complete within 10 retries
 iptables -A INPUT -m mac --mac-source [MAC address] -p tcp -j REJECT --syn --max-retries 10
 
 
-# Launch OpenSSH on boot
+### 4. Launch OpenSSH on boot
 sudo systemctl enable openssh-server
 
 

@@ -2,7 +2,7 @@
 <img src="https://github.com/DannnyzZ/Scripted-Linux-Hardening-SLH-/blob/be753fa910e769c2554528c3d35098f8ce906977/Scripted%20Linux%20Hardening%20(SLH)_Background.png" >
 </p>
 
-# Scripted Linux Hardening (SLH) v.1.0 UNDER DEVELOPMENT
+## Scripted Linux Hardening (SLH) v.1.0 UNDER DEVELOPMENT
 
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=white" />

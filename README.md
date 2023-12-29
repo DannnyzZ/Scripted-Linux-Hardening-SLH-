@@ -376,46 +376,34 @@ sudo apt install openssh-server
 ####### CLIENT #######
 # Disable root login
 echo 'PermitRootLogin no' | sudo tee -a /etc/ssh/ssh_config
-
 # Disable password authentication
 echo 'PasswordAuthentication no' | sudo tee -a /etc/ssh/ssh_config
-
 # Enable SSH key authentication
 echo 'PubkeyAuthentication yes' | sudo tee -a /etc/ssh/ssh_config
-
 # Use strong ciphers
 echo 'Ciphers AES-256-CBC' | sudo tee -a /etc/ssh/ssh_config
 echo 'Macs HMAC-SHA256' | sudo tee -a /etc/ssh/ssh_config
-
 # Enable logging
 echo 'SyslogFacility AUTH' | sudo tee -a /etc/ssh/ssh_config
 echo 'LogLevel INFO' | sudo tee -a /etc/ssh/ssh_config
-
 # Disable empty passwords
 echo 'PermitEmptyPasswords no' | sudo tee -a /etc/ssh/ssh_config
-
 
 ####### SERVER #######
 # Disable root login
 echo 'PermitRootLogin no' | sudo tee -a /etc/ssh/sshd_config
-
 # Disable password authentication
 echo 'PasswordAuthentication no' | sudo tee -a /etc/ssh/sshd_config
-
 # Enable SSH key authentication
 echo 'PubkeyAuthentication yes' | sudo tee -a /etc/ssh/sshd_config
-
 # Use strong ciphers
 echo 'Ciphers AES-256-CBC' | sudo tee -a /etc/ssh/sshd_config
 echo 'Macs HMAC-SHA256' | sudo tee -a /etc/ssh/sshd_config
-
 # Enable logging
 echo 'SyslogFacility AUTH' | sudo tee -a /etc/ssh/sshd_config
 echo 'LogLevel INFO' | sudo tee -a /etc/ssh/sshd_config
-
 # Disable empty passwords
 echo 'PermitEmptyPasswords no' | sudo tee -a /etc/ssh/sshd_config
-
 
 ### 3. Firewall config for OpenSSH in iptables
 # Drop all SSH connection attempts from the IP address [IP address] that fail to complete within 10 retries. 
@@ -434,10 +422,8 @@ touch ~/.ssh/authorized_keys
 cat ~/.ssh/(MY_KEY).pub >> ~/.ssh/authorized_keys
 ssh-copy-id (MY_REMOTE_USER)@(MY_IP)
 
-
 ### 5. Launch OpenSSH on boot
 sudo systemctl enable openssh-server
-
 
 # Restart OpenSSH
 sudo systemctl restart openssh-server

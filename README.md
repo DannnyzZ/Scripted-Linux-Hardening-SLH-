@@ -13,13 +13,10 @@
 </p>
 
 About SLH - WRITE HERE
-Guidelines: 
-
-> Red Hat: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/security_guide/index
-
-> CIS
-
-> NIST
+Guidelines used to develop hardening scripts:
+`Red Hat: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/security_guide/index`
+`Center for Internet Security (CIS): https://www.cisecurity.org/cis-benchmarks`
+`National Institute of Standards and Technology (NIST): https://ncp.nist.gov/checklist/909`
 
 ---
 

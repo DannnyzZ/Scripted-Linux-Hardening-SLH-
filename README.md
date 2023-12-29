@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Linux-blue?style=for-the-badge&logo=Linux&logoColor=white" />
   <img src="https://img.shields.io/badge/Bash-gold?style=for-the-badge&logo=Bash&logoColor=red" />
   <img src="https://img.shields.io/badge/NIST-orange?style=for-the-badge&logo=nist&logoColor=white" />
-  <img src="https://img.shields.io/badge/Red%20Hat-red?style=for-the-badge&logo=red-hat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Red%20Hat-red?style=for-the-badge&logo=red-hat&logoColor=white&labelColor=red" />
   <img src="https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=white" />
   <img src="https://img.shields.io/badge/OSHardening-black?style=for-the-badge" />
 </p>

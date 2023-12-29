@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/DannnyzZ/Scripted-Linux-Hardening-SLH-/blob/eb9ca22ddd615bb18b5a789316bdf9e0f836445f/SLH.png" >
+<img src="https://github.com/DannnyzZ/Scripted-Linux-Hardening-SLH-/blob/848faa4c4746801ddf1dfb93acf898ab4d019499/Scripted%20Linux%20Hardening%20(SLH)_Background.png" >
 </p>
 
 # Scripted Linux Hardening (SLH) v.1.0 UNDER DEVELOPMENT

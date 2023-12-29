@@ -555,18 +555,18 @@ Before you begin, ensure that you have the following prerequisites installed:
 1. Accounts
 ```sh
 Root (MY_SUDO_USER):
-> root:root
+    root:root
 Regular user:
-> danny:password
+    danny:password
 ```
 ```sh
 2. Values to change by user
 Hash value for sudo user password:
-> MY_SUDO_HASH
+    MY_SUDO_HASH
 Public key:
-> MY_PUBLIC_KEY
+    MY_PUBLIC_KEY
 Private key:
-> MY_PRIVATE_KEY
+    MY_PRIVATE_KEY
 ```
 
 

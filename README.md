@@ -608,13 +608,10 @@ Key Points:
 
 ## 🗺 Roadmap
 
-> - [X] ` Task 1: Establish firewall rules based on "implicit deny" rule`
-> - [X] ` Task 2: `
-> - [X] ` Task 3: `
+> - [X] ` Task 1: Establish firewall rules (implicit deny)`
 
-> - [ ] ` Incoming feature 1: Kernel isolation`
-> - [ ] ` Incoming feature 2: `
-> - [ ] ` Incoming feature 3: `
+> - [ ] ` Incoming feature 1: Kernel isolation features`
+> - [ ] ` Incoming feature 2: More automatisation - one shell script to harden Linux`
 
 
 ---

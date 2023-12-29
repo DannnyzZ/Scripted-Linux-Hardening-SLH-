@@ -366,8 +366,17 @@ sudo systemctl disable nfs-client.target
 
 1. Install OpenSSH client/server
 2. Configure and harden OpenSSH client/server
+   - Disable root login
+   - Disable password authentication
+   - Enable SSH key authentication
+   - Use strong cipher (AES-256-CBC, HMAC-SHA256)
+   - Enable logging
+   - Disable empty passwords
 3. Firewall config for OpenSSH in iptables
+   - Drop all SSH connection attempts from the IP address [IP address] that fail to complete within 10 retries.
+   - Drop all SSH connection attempts from the MAC address [MAC address] that fail to complete within 10 retries
 4. Generate and authenticate authorization keys
+   - rsa 4096 bit
 5. Launch OpenSSH on boot
 
 ```sh

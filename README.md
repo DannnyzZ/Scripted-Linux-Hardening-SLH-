@@ -365,7 +365,8 @@ sudo systemctl disable nfs-client.target
 1. Install OpenSSH client/server
 2. Configure and harden OpenSSH client/server
 3. Firewall config for OpenSSH in iptables
-4. Launch OpenSSH on boot
+4. Generate and authenticate authorization keys
+5. Launch OpenSSH on boot
 
 ```sh
 ### 1. Install OpenSSH server & client
@@ -422,8 +423,19 @@ iptables -A INPUT -p tcp -s [IP address] -j REJECT --syn --max-retries 10
 # Drop all SSH connection attempts from the MAC address [MAC address] that fail to complete within 10 retries
 iptables -A INPUT -m mac --mac-source [MAC address] -p tcp -j REJECT --syn --max-retries 10
 
+### 4. Generate and authenticate authorization keys 
+# Generate keys to authenticate (MY_KEY) | -f is name of keys
+# This will result in generating two keys: public and private. You will be prompted to give it name for example (MY_KEY), and asked to use password (used during loging via ssh). ALWAYS KEEP THE PRIVATE KEY SAFE.
+ssh-keygen -t rsa -b 4096 -f (MY_KEY)
+# Authorize key
+cd ~/.ssh
+touch ~/.ssh/authorized_keys
+# Place remote user's public key into authorization
+cat ~/.ssh/(MY_KEY).pub >> ~/.ssh/authorized_keys
+ssh-copy-id (MY_REMOTE_USER)@(MY_IP)
 
-### 4. Launch OpenSSH on boot
+
+### 5. Launch OpenSSH on boot
 sudo systemctl enable openssh-server
 
 
@@ -552,12 +564,16 @@ Before you begin, ensure that you have the following prerequisites installed:
 3. Choose section of hardening scripts and execute them with elevated privileges.
 
 ### Legend of objects in scripts
-1. Accounts
+1. Accounts and system
 ```sh
 Root (MY_SUDO_USER):
     root:root
 Regular user:
     danny:password
+Remote user using SSH (MY_REMOTE_USER)
+    danny:danny
+System IP
+    (MY_IP)
 ```
 ```sh
 2. Values to change by user

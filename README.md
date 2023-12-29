@@ -390,7 +390,7 @@ sudo apt install openssh-server
 # 2. Configure OpenSSH and harden it
 ### CLIENT ###
 # Disable root login
-echo 'PermitRootLogin no' | sudo tee -a /.ssh/config
+echo 'PermitRootLogin no' | sudo tee -a /etc/ssh/ssh_config
 
 # Disable password authentication
 echo 'PasswordAuthentication no' | sudo tee -a /.ssh/config

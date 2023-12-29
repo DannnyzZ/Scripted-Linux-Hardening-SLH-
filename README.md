@@ -49,31 +49,9 @@ Guidelines used to develop hardening scripts:
 
 # 📍 Overview
 
+
 Write here
 
-
----
-
-
-### Default users and settings for the sake of a manual
-1. Accounts
-   
-Root (MY_SUDO_USER):
-> root:root
-
-Regular user:
-> danny:password
-
-2. Values to change by user
-
-Hash value for sudo user password:
-> MY_SUDO_HASH
-
-Public key
-> MY_PUBLIC_KEY
-
-Private key
-> MY_PRIVATE_KEY
 
 # 🛠️ System Maintenance
 
@@ -572,6 +550,24 @@ Before you begin, ensure that you have the following prerequisites installed:
 1. Run terminal on choosen machine.
 2. Update your system - optionally upgrade distribution
 3. Choose section of hardening scripts and execute them with elevated privileges.
+
+### Legend of objects in scripts
+1. Accounts
+```sh
+Root (MY_SUDO_USER):
+> root:root
+Regular user:
+> danny:password
+```
+```sh
+2. Values to change by user
+Hash value for sudo user password:
+> MY_SUDO_HASH
+Public key:
+> MY_PUBLIC_KEY
+Private key:
+> MY_PRIVATE_KEY
+```
 
 
 ---

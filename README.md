@@ -397,18 +397,22 @@ sudo apt install openssh-server
 echo 'PermitRootLogin no' | sudo tee -a /etc/ssh/ssh_config
 
 # Disable password authentication
-echo 'PasswordAuthentication no' | sudo tee -a /.ssh/config
+echo 'PasswordAuthentication no' | sudo tee -a /etc/ssh/ssh_config
 
 # Enable SSH key authentication
-echo 'PubkeyAuthentication yes' | sudo tee -a /.ssh/config
+echo 'PubkeyAuthentication yes' | sudo tee -a /etc/ssh/ssh_config
 
 # Use strong ciphers
-echo 'Ciphers AES-256-CBC' | sudo tee -a /.ssh/config
-echo 'Macs HMAC-SHA256' | sudo tee -a /.ssh/config
+echo 'Ciphers AES-256-CBC' | sudo tee -a /etc/ssh/ssh_config
+echo 'Macs HMAC-SHA256' | sudo tee -a /etc/ssh/ssh_config
 
 # Enable logging
-echo 'SyslogFacility AUTH' | sudo tee -a /.ssh/config
-echo 'LogLevel INFO' | sudo tee -a /.ssh/config
+echo 'SyslogFacility AUTH' | sudo tee -a /etc/ssh/ssh_config
+echo 'LogLevel INFO' | sudo tee -a /etc/ssh/ssh_config
+
+# Disable empty passwords
+echo 'PermitEmptyPasswords no' | sudo tee -a /etc/ssh/ssh_config
+
 
 ### SERVER ###
 # Disable root login
@@ -428,7 +432,8 @@ echo 'Macs HMAC-SHA256' | sudo tee -a /etc/ssh/sshd_config
 echo 'SyslogFacility AUTH' | sudo tee -a /etc/ssh/sshd_config
 echo 'LogLevel INFO' | sudo tee -a /etc/ssh/sshd_config
 
-
+# Disable empty passwords
+echo 'PermitEmptyPasswords no' | sudo tee -a /etc/ssh/sshd_config
 
 
 ### Firewall config of SSH

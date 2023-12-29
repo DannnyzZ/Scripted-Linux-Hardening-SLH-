@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/CIS-purple?style=for-the-badge&logo=cis&logoColor=white" />
   <img src="https://img.shields.io/badge/OSHardening-black?style=for-the-badge" />
 </p>
+<img src="https://img.shields.io/badge/NIST-blue?style=for-the-badge&logo=nist&logoColor=white" />
 
 About SLH - WRITE HERE
 

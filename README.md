@@ -513,14 +513,14 @@ sudo iptables -A OUTPUT -j DROP
 ### Fail2Ban
 
 Fail2Ban scans log files like /var/log/auth.log and bans IP addresses conducting too many failed login attempts. It does this by updating system firewall rules to reject new connections from those IP addresses, for a configurable amount of time.
-
-- Install requirements & software
-- Configure service
+1. Install requirements & software
+2. Configure service
 - Adjust logging and "ban" rate requirements
-
+- DODAJ OPISY
+3. Start fail2ban on boot and restart it
 
 ```sh
-### Install requirements
+### 1. Install requirements & fail2ban
 # Install Python (version 3.5 or later)
 sudo apt install python3 -y
 # Install pip (Python package installer)
@@ -529,13 +529,28 @@ sudo apt install python3-pip -y
 sudo apt install python3-setuptools python3-distutils -y
 # Install PyPy3
 sudo apt install pypy3 -y
-
 ### Install fail2ban
 # Install fail2ban
 apt-get install fail2ban
-#
 
-here
+### 2. Configure fail2ban
+# Create config file for SSH
+sudo nano /etc/fail2ban/jail.d/sshd.conf
+# Add rules
+echo '[sshd]
+enabled = true
+filter = sshd
+port = ssh
+logpath = /var/log/auth.log
+maxretry = 10
+banaction = iptables-allports' | sudo tee -a /etc/fail2ban/jail.d/sshd.conf
+
+### 3. Enable fail2ban on boot
+sudo systemctl enable fail2ban
+# Start fail2ban
+sudo systemctl start fail2ban
+# Restart fail2ban
+sudo systemctl status fail2ban
 ```
 
 How to use fail2ban

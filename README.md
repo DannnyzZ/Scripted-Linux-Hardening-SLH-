@@ -654,20 +654,10 @@ Non-Commercial Use ONLY.
 
 ## 👏 Acknowledgments
 
-  `ℹ️  National Institute of Standards and Technology`
-  
-  `ℹ️  Center for Internet Security`
-
   `ℹ️  Stack Overflow`
 
-  `ℹ️  Red Hat`
-   
-  `ℹ️  ChatGPT 4.0`
-   
-  `ℹ️  Readme-ai https://github.com/eli64s/readme-ai`
-
-  `ℹ️  Logo.com https://logo.com`
-
+  `ℹ️  fail2ban`
+  
   
 ---
 

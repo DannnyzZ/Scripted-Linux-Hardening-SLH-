@@ -220,7 +220,7 @@ sudo chmod 1777 /var/tmp
 
 </details>
 
-## Event Log Categories
+### Event Log Categories
 
 <details closed><summary>Event Log Categories</summary>
 

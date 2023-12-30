@@ -13,20 +13,6 @@
   <img src="https://img.shields.io/badge/OSHardening-black?style=for-the-badge" />
 </p>
 
-About SLH - WRITE HERE
-
-Hardening guidelines were based on:
-
-`Red Hat: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/security_guide/index`
-
-`Center for Internet Security (CIS): https://www.cisecurity.org/cis-benchmarks`
-
-`National Institute of Standards and Technology (NIST): https://ncp.nist.gov/checklist/909`
-
-`SSH.com: https://www.ssh.com/academy/ssh/sshd_config`
-
----
-
 
 ## 📒 Table of Contents
 - [📍 Overview](#-overview)
@@ -55,6 +41,19 @@ Hardening guidelines were based on:
 
 
 Write here
+
+Hardening guidelines were based on:
+
+`Red Hat: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/security_guide/index`
+
+`Center for Internet Security (CIS): https://www.cisecurity.org/cis-benchmarks`
+
+`National Institute of Standards and Technology (NIST): https://ncp.nist.gov/checklist/909`
+
+`SSH.com: https://www.ssh.com/academy/ssh/sshd_config`
+
+
+---
 
 
 # 🛠️ System Maintenance

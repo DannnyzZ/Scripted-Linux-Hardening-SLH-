@@ -656,7 +656,7 @@ Non-Commercial Use ONLY.
 
   `ℹ️  Stack Overflow`
 
-  `ℹ️  fail2ban`
+  `ℹ️  fail2ban: https://github.com/fail2ban`
   
   
 ---

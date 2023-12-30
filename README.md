@@ -91,13 +91,13 @@ sudo apt-get autoremove && sudo apt-get autoremove --purge
 
 # 👨‍💼 Accounts
 1. Password policies
-- Password age
-- Password complexity requirements
-- Implement multi-factor authentication where possible.
+  - Password age
+  - Password complexity requirements
+  - Implement multi-factor authentication where possible.
 2. Account restrictions for regular user
-- Disable execution, let write and read contents.
-- Disable system paths.
-- Establish the least privilege.
+  - Disable execution, let write and read contents.
+  - Disable system paths.
+  - Establish the least privilege.
 
 Paths/Directories required for workstation user to work properly: 
 
@@ -454,14 +454,14 @@ Iptables is a user-space utility that allows a system administrator to configure
 
 1. Use secure network protocols and disable insecure ones.
 1. Block protocols
-- ICMP, 
+  - ICMP, 
 ```sh
 # - ICMP (Internet Control Message Protocol) - Drop all incoming packets from all IP's.
 sudo iptables -A INPUT -p icmp -j DROP
 ```
 2. Block traffic on specific ports
-- 22, 443, 53, implicit deny
-- Optional: 80
+  - 22, 443, 53, implicit deny
+  - Optional: 80
 ```sh
 # Flush existing rules
 sudo iptables -F
@@ -515,8 +515,8 @@ sudo iptables -A OUTPUT -j DROP
 Fail2Ban scans log files like /var/log/auth.log and bans IP addresses conducting too many failed login attempts. It does this by updating system firewall rules to reject new connections from those IP addresses, for a configurable amount of time.
 1. Install requirements & software
 2. Configure service
-- Adjust logging and "ban" rate requirements
-- DODAJ OPISY
+  - Adjust logging and "ban" rate requirements
+  - DODAJ OPISY
 3. Start fail2ban on boot and restart it
 
 ```sh
@@ -608,13 +608,13 @@ While developing SLH (Secure Linux Hardening) scripts, I encountered instances w
 
 Key Points:
 
-1. Testing is Crucial: Prioritize testing SLH scripts in a dedicated environment to avoid unpredictable consequences.
-2. Production Caution: Refrain from deploying scripts directly in production without rigorous testing due to the potential for unforeseen issues.
-3. Understand the scripts: Exercise caution, understand the impact of changes, and follow best practices for system configuration and security.
-4. Documentation and Backup: Document changes, maintain backups, and monitor system modifications for security and reliability.
-5. Stay Informed: Keep updated on script improvements, security practices, and Linux administration for a secure environment.
-6. Adopt Gradually: If deploying in production, adopt changes gradually, monitoring closely for unexpected issues.
-7. Customization Matters: Customize scripts based on specific environment needs to balance security and functionality.
+  1. Testing is Crucial: Prioritize testing SLH scripts in a dedicated environment to avoid unpredictable consequences.
+  2. Production Caution: Refrain from deploying scripts directly in production without rigorous testing due to the potential for unforeseen issues.
+  3. Understand the scripts: Exercise caution, understand the impact of changes, and follow best practices for system configuration and security.
+  4. Documentation and Backup: Document changes, maintain backups, and monitor system modifications for security and reliability.
+  5. Stay Informed: Keep updated on script improvements, security practices, and Linux administration for a secure environment.
+  6. Adopt Gradually: If deploying in production, adopt changes gradually, monitoring closely for unexpected issues.
+  7. Customization Matters: Customize scripts based on specific environment needs to balance security and functionality.
 
 **Use SLH wisely to enhance security while minimizing risks.**
 

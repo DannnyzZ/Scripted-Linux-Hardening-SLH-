@@ -23,6 +23,8 @@ Hardening guidelines were based on:
 
 `National Institute of Standards and Technology (NIST): https://ncp.nist.gov/checklist/909`
 
+`SSH.com: https://www.ssh.com/academy/ssh/sshd_config`
+
 ---
 
 
@@ -612,7 +614,7 @@ Key Points:
 
 > - [ ] ` Incoming feature 1: Kernel isolation features`
 > - [ ] ` Incoming feature 2: More automatisation - one shell script to harden Linux`
-
+> - [ ] ` Incoming feature 3: Add banner on password prompt`
 
 ---
 

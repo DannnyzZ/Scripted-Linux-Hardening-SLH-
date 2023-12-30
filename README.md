@@ -540,7 +540,7 @@ sudo nano /etc/fail2ban/jail.d/sshd.conf
 echo '[sshd]
 enabled = true
 filter = sshd
-port = ssh
+port = 22
 logpath = /var/log/auth.log
 maxretry = 10
 banaction = iptables-allports' | sudo tee -a /etc/fail2ban/jail.d/sshd.conf

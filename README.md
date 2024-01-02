@@ -629,6 +629,8 @@ Key Points:
 > - [ ] ` Incoming feature 1: Kernel isolation features`
 > - [ ] ` Incoming feature 2: More automatisation - one shell script to harden Linux`
 > - [ ] ` Incoming feature 3: Add banner on password prompt`
+> - [ ] ` Incoming feature 4: Include simple honeypot.
+> - [ ] ` Incoming feature 5: Include IDS/IPS
 
 ---
 

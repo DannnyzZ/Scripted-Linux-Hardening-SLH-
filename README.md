@@ -88,13 +88,13 @@ sudo apt-get autoremove && sudo apt-get autoremove --purge
 
 # 👨‍💼 Accounts
 1. Password policies
-  - Password age
-  - Password complexity requirements
-  - Implement multi-factor authentication where possible.
+   - Password age
+   - Password complexity requirements
+   - Implement multi-factor authentication where possible.
 2. Account restrictions for regular user
-  - Disable execution, let write and read contents.
-  - Disable system paths.
-  - Establish the least privilege.
+   - Disable execution, let write and read contents.
+   - Disable system paths.
+   - Establish the least privilege.
 
 Paths/Directories required for workstation user to work properly: 
 

@@ -40,7 +40,28 @@
 # 📍 Overview
 
 
-Write here
+The Secure Linux Hardening (SLH) scripts are a comprehensive set of tools and scripts designed to enhance the security of Linux systems. These scripts cover a wide range of security hardening measures, including:
+
+  1. Disabling unnecessary services and ports: This helps to minimize the attack surface of the system by reducing the number of services and ports that are available for attackers to exploit.
+
+  2. Enforcing strong password policies: This helps to protect against password-based attacks by requiring strong passwords that are difficult to guess or crack.
+
+  3. Disabling insecure file permissions: This helps to prevent unauthorized access to sensitive files by enforcing secure file permissions.
+
+  4. Removing unnecessary packages and applications: This helps to reduce the number of potential vulnerabilities on the system by removing unnecessary packages and applications.
+
+  5. Disabling root login over SSH: This helps to prevent unauthorized access to the system by disabling root login over SSH and requiring the use of sudo for administrative tasks.
+
+  6. Configuring firewalls: This helps to control incoming and outgoing network traffic and prevent unauthorized access to the system.
+
+  7. Disabling unused features and services: This helps to minimize the attack surface of the system by disabling unused features and services that are not needed for the system's operation.
+
+  8. Installing and configuring security patches: This helps to protect the system against known vulnerabilities by installing and configuring security patches promptly.
+
+The SLH scripts are easy to use and can be customized to meet the specific needs of each organization. They are a valuable tool for any Linux administrator who wants to improve the security of their systems.
+
+
+`Tested on distibutions: Kali, Ubuntu`
 
 Hardening guidelines were based on:
 

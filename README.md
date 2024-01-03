@@ -47,7 +47,7 @@ SLH (Scripted Linux Hardening) v1.0 is a comprehensive repository aimed at enhan
 
 The SLH scripts are easy to use and can be customized to meet the specific needs of each organization. They are a valuable tool for any Linux administrator who wants to improve the security of their systems.
 
-`Tested on distibutions: Kali, Ubuntu`
+`Tested on distibutions: Kali Linux (x64), Ubuntu (x64), Debian (64)`
 
 
 ---

@@ -39,15 +39,21 @@
 
 # 📍 Overview
 
-SLH (Scripted Linux Hardening) v1.0 is a comprehensive repository aimed at enhancing the security posture of Linux-based systems. Developed using Bash scripting, it leverages industry-standard guidelines from reputable sources such as Red Hat, Center for Internet Security (CIS), and National Institute of Standards and Technology (NIST). These scripts cover a wide range of security hardening measures, including:
+Scripted Linux Hardening (SLH) v1.0 is a comprehensive Bash-based toolkit encompassing a diverse array of hardening scripts tailored for Linux-based operating systems. Its multifaceted approach encompasses seven critical areas:
 
-1. reason
-2. reason
-3. reason
+  - System Maintenance
+  - Accounts
+  - Kernel
+  - File System
+  - Logging, Monitoring & Alerting
+  - Network & Services
+  - Firewall & Security
+
+SLH is compatible with major Linux distributions, including Ubuntu, Debian, and Kali (x64). Beyond traditional Bash hardening, SLH utilizes industry-standard hardening tools like iptables, rsyslog, and fail2ban to further enhance system security.
+
+`All hardening techniques within SLH are aligned with best practices and recommendations established by industry leaders such as Red Hat, Center for Internet Security (CIS), and National Institute of Standards and Technology (NIST).`
 
 The SLH scripts are easy to use and can be customized to meet the specific needs of each organization. They are a valuable tool for any Linux administrator who wants to improve the security of their systems.
-
-`Tested on distibutions: Kali Linux (x64), Ubuntu (x64), Debian (64)`
 
 
 ---

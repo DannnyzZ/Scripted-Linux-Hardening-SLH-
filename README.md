@@ -474,9 +474,6 @@ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 sudo iptables -A INPUT -p udp --dport 53 -j ACCEPT
 
-# Drop all other incoming traffic
-sudo iptables -A INPUT -j DROP
-
 # Allow specific ports for outgoing traffic: SSH, DNS, HTTPS
 sudo iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
 sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
@@ -498,8 +495,11 @@ sudo iptables -A INPUT -p tcp --tcp-flags SYN,RST SYN,RST -j DROP
 # FIN-PSH-URG combination packets
 sudo iptables -A INPUT -p tcp --tcp-flags FIN,PSH,URG FIN,PSH,URG -j DROP
 
-# Drop all traffic on specific ports associated with malware
+# Drop incoming traffic on specific ports associated with malware
 sudo iptables -A INPUT -p all --match multiport --sports 23432,31338,31337,31339,18006,139,12349,44444,6667,8012,80,7597,21,4000,3150,666,2140,1026,10048,64666,23,22222,6969,11000,7626,113,10100,1001,21544,3131,7777,1243,6267,25,6776,25685,27374,68,6400,1120,12345,7300,1234 -j DROP
+
+# Drop outgoing traffic on specific ports associated with malware
+sudo iptables -A OUTPUT -p all --match multiport --dports 23432,31338,31337,31339,18006,139,12349,44444,6667,8012,80,7597,21,4000,3150,666,2140,1026,10048,64666,23,22222,6969,11000,7626,113,10100,1001,21544,3131,7777,1243,6267,25,6776,25685,27374,68,6400,1120,12345,7300,1234 -j DROP
 
 # Drop malicious IP's
 # https://www.projecthoneypot.org/
@@ -507,6 +507,8 @@ sudo iptables -A INPUT -p all --match multiport --sports 23432,31338,31337,31339
 
 # Drop all other outgoing traffic
 sudo iptables -A OUTPUT -j DROP
+# Drop all other incoming traffic
+sudo iptables -A INPUT -j DROP
 ```
 
 

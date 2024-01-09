@@ -568,6 +568,20 @@ fail2ban-client -h
 ---
 
 
+### Cloudflare
+1.1.1.1 is a public DNS resolver operated by Cloudflare that offers a fast and private way to browse the Internet. Unlike most DNS resolvers, 1.1.1.1 does not sell user data to advertisers.
+
+```sh
+# Edit DNS server configuration to use Cloudflare servers.
+echo '
+nameserver 1.1.1.1
+nameserver 1.0.0.1' | sudo tee -a /etc/resolv.conf
+```
+
+
+---
+
+
 ### ✔️ Prerequisites
 
 Before you begin, ensure that you have the following prerequisites installed:
